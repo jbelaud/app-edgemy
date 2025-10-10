@@ -96,12 +96,8 @@
           "name": "account_user_id_user_id_fk",
           "tableFrom": "account",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -111,10 +107,7 @@
         "account_account_id_provider_id_unique": {
           "name": "account_account_id_provider_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "account_id",
-            "provider_id"
-          ]
+          "columns": ["account_id", "provider_id"]
         }
       },
       "policies": {},
@@ -263,12 +256,8 @@
           "name": "apikey_user_id_user_id_fk",
           "tableFrom": "apikey",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -324,12 +313,8 @@
           "name": "member_organization_id_organization_id_fk",
           "tableFrom": "member",
           "tableTo": "organization",
-          "columnsFrom": [
-            "organization_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["organization_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -337,12 +322,8 @@
           "name": "member_user_id_user_id_fk",
           "tableFrom": "member",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -352,10 +333,7 @@
         "member_organization_id_user_id_unique": {
           "name": "member_organization_id_user_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "organization_id",
-            "user_id"
-          ]
+          "columns": ["organization_id", "user_id"]
         }
       },
       "policies": {},
@@ -419,9 +397,7 @@
         "organization_slug_unique": {
           "name": "organization_slug_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "slug"
-          ]
+          "columns": ["slug"]
         }
       },
       "policies": {},
@@ -502,12 +478,8 @@
           "name": "session_user_id_user_id_fk",
           "tableFrom": "session",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -517,9 +489,7 @@
         "session_token_unique": {
           "name": "session_token_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "token"
-          ]
+          "columns": ["token"]
         }
       },
       "policies": {},
@@ -562,12 +532,8 @@
           "name": "two_factor_user_id_user_id_fk",
           "tableFrom": "two_factor",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -682,9 +648,7 @@
         "user_email_unique": {
           "name": "user_email_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "email"
-          ]
+          "columns": ["email"]
         }
       },
       "policies": {},
@@ -884,12 +848,8 @@
           "name": "coach_profile_user_id_user_id_fk",
           "tableFrom": "coach_profile",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -899,9 +859,7 @@
         "coach_profile_user_id_unique": {
           "name": "coach_profile_user_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "user_id"
-          ]
+          "columns": ["user_id"]
         }
       },
       "policies": {},
@@ -1014,12 +972,8 @@
           "name": "coaching_session_player_id_user_id_fk",
           "tableFrom": "coaching_session",
           "tableTo": "user",
-          "columnsFrom": [
-            "player_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["player_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1027,12 +981,8 @@
           "name": "coaching_session_coach_id_user_id_fk",
           "tableFrom": "coaching_session",
           "tableTo": "user",
-          "columnsFrom": [
-            "coach_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["coach_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1144,12 +1094,8 @@
           "name": "payment_session_id_coaching_session_id_fk",
           "tableFrom": "payment",
           "tableTo": "coaching_session",
-          "columnsFrom": [
-            "session_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["session_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1157,12 +1103,8 @@
           "name": "payment_player_id_user_id_fk",
           "tableFrom": "payment",
           "tableTo": "user",
-          "columnsFrom": [
-            "player_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["player_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1170,12 +1112,8 @@
           "name": "payment_coach_id_user_id_fk",
           "tableFrom": "payment",
           "tableTo": "user",
-          "columnsFrom": [
-            "coach_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["coach_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1185,9 +1123,7 @@
         "payment_stripe_payment_intent_id_unique": {
           "name": "payment_stripe_payment_intent_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "stripe_payment_intent_id"
-          ]
+          "columns": ["stripe_payment_intent_id"]
         }
       },
       "policies": {},
@@ -1275,12 +1211,8 @@
           "name": "review_session_id_coaching_session_id_fk",
           "tableFrom": "review",
           "tableTo": "coaching_session",
-          "columnsFrom": [
-            "session_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["session_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1288,12 +1220,8 @@
           "name": "review_player_id_user_id_fk",
           "tableFrom": "review",
           "tableTo": "user",
-          "columnsFrom": [
-            "player_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["player_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1301,12 +1229,8 @@
           "name": "review_coach_id_user_id_fk",
           "tableFrom": "review",
           "tableTo": "user",
-          "columnsFrom": [
-            "coach_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["coach_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1314,12 +1238,8 @@
           "name": "review_moderated_by_user_id_fk",
           "tableFrom": "review",
           "tableTo": "user",
-          "columnsFrom": [
-            "moderated_by"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["moderated_by"],
+          "columnsTo": ["id"],
           "onDelete": "no action",
           "onUpdate": "no action"
         }
@@ -1329,9 +1249,7 @@
         "review_session_id_unique": {
           "name": "review_session_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "session_id"
-          ]
+          "columns": ["session_id"]
         }
       },
       "policies": {},
@@ -1401,12 +1319,8 @@
           "name": "notifications_user_id_user_id_fk",
           "tableFrom": "notifications",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1653,9 +1567,7 @@
         "subscription_plan_code_unique": {
           "name": "subscription_plan_code_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "code"
-          ]
+          "columns": ["code"]
         }
       },
       "policies": {},
@@ -1760,12 +1672,8 @@
           "name": "user_settings_user_id_user_id_fk",
           "tableFrom": "user_settings",
           "tableTo": "user",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1781,37 +1689,22 @@
     "public.organization_role": {
       "name": "organization_role",
       "schema": "public",
-      "values": [
-        "owner",
-        "admin",
-        "member"
-      ]
+      "values": ["owner", "admin", "member"]
     },
     "public.role_type": {
       "name": "role_type",
       "schema": "public",
-      "values": [
-        "PLAYER",
-        "COACH",
-        "ADMIN"
-      ]
+      "values": ["PLAYER", "COACH", "ADMIN"]
     },
     "public.user_visibility": {
       "name": "user_visibility",
       "schema": "public",
-      "values": [
-        "public",
-        "private"
-      ]
+      "values": ["public", "private"]
     },
     "public.coach_subscription_plan": {
       "name": "coach_subscription_plan",
       "schema": "public",
-      "values": [
-        "BASIC",
-        "PRO",
-        "PREMIUM"
-      ]
+      "values": ["BASIC", "PRO", "PREMIUM"]
     },
     "public.coaching_type": {
       "name": "coaching_type",
@@ -1828,21 +1721,12 @@
     "public.edgemy_role": {
       "name": "edgemy_role",
       "schema": "public",
-      "values": [
-        "PLAYER",
-        "COACH",
-        "ADMIN"
-      ]
+      "values": ["PLAYER", "COACH", "ADMIN"]
     },
     "public.payment_status": {
       "name": "payment_status",
       "schema": "public",
-      "values": [
-        "PENDING",
-        "SUCCEEDED",
-        "FAILED",
-        "REFUNDED"
-      ]
+      "values": ["PENDING", "SUCCEEDED", "FAILED", "REFUNDED"]
     },
     "public.poker_format": {
       "name": "poker_format",
@@ -1859,57 +1743,32 @@
     "public.session_status": {
       "name": "session_status",
       "schema": "public",
-      "values": [
-        "PENDING",
-        "CONFIRMED",
-        "COMPLETED",
-        "CANCELLED"
-      ]
+      "values": ["PENDING", "CONFIRMED", "COMPLETED", "CANCELLED"]
     },
     "public.plan_status": {
       "name": "plan_status",
       "schema": "public",
-      "values": [
-        "active",
-        "inactive",
-        "deprecated"
-      ]
+      "values": ["active", "inactive", "deprecated"]
     },
     "public.language_type": {
       "name": "language_type",
       "schema": "public",
-      "values": [
-        "fr",
-        "en",
-        "es"
-      ]
+      "values": ["fr", "en", "es"]
     },
     "public.notification_channel": {
       "name": "notification_channel",
       "schema": "public",
-      "values": [
-        "email",
-        "push",
-        "both",
-        "none"
-      ]
+      "values": ["email", "push", "both", "none"]
     },
     "public.theme_type": {
       "name": "theme_type",
       "schema": "public",
-      "values": [
-        "light",
-        "dark",
-        "system"
-      ]
+      "values": ["light", "dark", "system"]
     },
     "public.two_factor_type": {
       "name": "two_factor_type",
       "schema": "public",
-      "values": [
-        "otp",
-        "totp"
-      ]
+      "values": ["otp", "totp"]
     }
   },
   "schemas": {},

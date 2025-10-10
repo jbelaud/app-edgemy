@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import UserMenu from '@/components/features/auth/user-menu'
 import {Button} from '@/components/ui/button'
 import {getAuthUser} from '@/services/authentication/auth-service'
 
@@ -7,9 +8,13 @@ export default async function ButtonConnexionDashboard() {
   const user = await getAuthUser()
   if (user) {
     return (
-      <Button asChild>
-        <Link href="/dashboard">Dashboard</Link>
-      </Button>
+      <UserMenu
+        user={{
+          name: user.name,
+          email: user.email,
+          image: user.image,
+        }}
+      />
     )
   }
   return (
