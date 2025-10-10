@@ -51,32 +51,27 @@ export function defineAbilitiesFor(
     return builder.build()
   }
 
-  // SUPER_ADMIN - permissions complètes
-  if (user.role === RoleConst.SUPER_ADMIN) {
-    buildSuperAdminAbilities(builder)
-    return builder.build()
-  }
-
-  // ADMIN - permissions étendues
+  // ADMIN - permissions complètes (équivalent SUPER_ADMIN pour Edgemy)
   if (user.role === RoleConst.ADMIN) {
+    buildSuperAdminAbilities(builder)
     buildAdminAbilities(builder)
     return builder.build()
   }
 
-  // USER - permissions standards
-  if (user.role === RoleConst.USER) {
+  // COACH - permissions coach
+  if (user.role === RoleConst.COACH) {
     buildUserAbilities(builder, user, orgContext)
     return builder.build()
   }
 
-  // MODERATOR/REDACTOR - même permissions que user pour le moment
-  if (user.role === RoleConst.MODERATOR || user.role === RoleConst.REDACTOR) {
+  // PLAYER - permissions standards
+  if (user.role === RoleConst.PLAYER) {
     buildUserAbilities(builder, user, orgContext)
     return builder.build()
   }
 
-  // PUBLIC ou role non defini - permissions guest
-  if (!user.role || user.role === RoleConst.PUBLIC) {
+  // Role non défini - permissions guest
+  if (!user.role) {
     buildGuestAbilities(builder)
     return builder.build()
   }
@@ -179,7 +174,7 @@ export function filterFields<T extends Record<string, unknown>>(
  */
 export function isUserAdmin(user?: User): boolean {
   if (!user) return false
-  return user.role === RoleConst.ADMIN || user.role === RoleConst.SUPER_ADMIN
+  return user.role === RoleConst.ADMIN
 }
 
 /**

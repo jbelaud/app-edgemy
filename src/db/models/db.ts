@@ -24,6 +24,7 @@ const db = drizzle(pool, {
     ...subscription,
     ...notification,
   },
+  logger: env.NODE_ENV === 'development', // Activer les logs SQL en dev
 })
 
 if (env.NODE_ENV === 'test') {

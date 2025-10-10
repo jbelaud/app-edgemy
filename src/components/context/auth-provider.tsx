@@ -82,23 +82,17 @@ export function useAuth() {
   return context
 }
 
-// Hook utilitaire pour vérifier les rôles de l'utilisateur
+// Hook utilitaire pour vérifier les rôles de l'utilisateur Edgemy
 export function useAuthUserRole() {
   const {user} = useAuth()
 
   const isAdmin = user?.role === RoleConst.ADMIN
-  const isUser = user?.role === RoleConst.USER
-  const isSuperAdmin = user?.role === RoleConst.SUPER_ADMIN
-  const isPublic = user?.role === RoleConst.PUBLIC
-  const isRedactor = user?.role === RoleConst.REDACTOR
-  const isModerator = user?.role === RoleConst.MODERATOR
+  const isCoach = user?.role === RoleConst.COACH
+  const isPlayer = user?.role === RoleConst.PLAYER
 
   return {
     isAdmin,
-    isUser,
-    isSuperAdmin,
-    isPublic,
-    isRedactor,
-    isModerator,
+    isCoach,
+    isPlayer,
   }
 }
