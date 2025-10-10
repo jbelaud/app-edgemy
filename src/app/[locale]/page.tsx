@@ -71,6 +71,14 @@ export default async function Home({
           </Link>
         </nav>
         <div className="ml-auto flex items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            className="border-orange-500 bg-orange-500/10 text-orange-600 hover:bg-orange-500/20 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300"
+            asChild
+          >
+            <Link href="/register?role=coach">Devenir Coach</Link>
+          </Button>
           <LangToggle />
           <ButtonConnexionDashboard />
           <ModeToggle />
@@ -86,19 +94,9 @@ export default async function Home({
         <p className="text-muted-foreground mb-8 max-w-2xl text-lg sm:text-xl">
           {t('hero.description')}
         </p>
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row">
-          <Button size="lg" asChild>
-            <Link href="/register">{t('hero.cta')}</Link>
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-orange-500 bg-orange-500/10 text-orange-600 hover:bg-orange-500/20 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300"
-            asChild
-          >
-            <Link href="/register?role=coach">Devenir Coach</Link>
-          </Button>
-        </div>
+        <Button size="lg" className="mb-8">
+          <Link href="/register">{t('hero.cta')}</Link>
+        </Button>
       </section>
 
       {/* Product Image */}
