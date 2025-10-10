@@ -305,11 +305,14 @@ function createDatabaseHooks() {
     user: {
       create: {
         before: async (user: User) => {
+          // S'assurer que le rôle est toujours défini
+          const role = (user as Record<string, unknown>).role || 'PLAYER'
+
           return {
             data: {
               ...user,
               name: user.name || user.email.split('@')[0],
-              role: user.role || 'PLAYER', // Rôle par défaut pour Edgemy
+              role: role as 'PLAYER' | 'COACH' | 'ADMIN', // Forcer le type pour Edgemy
             },
           }
         },
