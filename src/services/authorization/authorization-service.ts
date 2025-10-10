@@ -64,8 +64,8 @@ export function defineAbilitiesFor(
     return builder.build()
   }
 
-  // PLAYER - permissions standards
-  if (user.role === RoleConst.PLAYER) {
+  // USER - permissions standards
+  if (user.role === RoleConst.USER) {
     buildUserAbilities(builder, user, orgContext)
     return builder.build()
   }

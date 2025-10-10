@@ -34,7 +34,7 @@ import {CoachProfile} from '../types/domain/coach-types'
 import {User} from '../types/domain/user-types'
 
 const coachUserId = 'ae760f8e-4aa6-4d71-a4c8-344429b7ae21'
-const playerUserId = 'de760f8e-4aa6-4d71-a4c8-344429b7ae28'
+const userUserId = 'de760f8e-4aa6-4d71-a4c8-344429b7ae28'
 const adminUserId = 'fe760f8e-4aa6-4d71-a4c8-344429b7ae29'
 
 const coachUser: User = {
@@ -54,13 +54,13 @@ const coachUser: User = {
   twoFactorEnabled: null,
 }
 
-const playerUser: User = {
-  id: playerUserId,
-  name: 'Player Test',
-  email: 'player@test.com',
+const standardUser: User = {
+  id: userUserId,
+  name: 'User Test',
+  email: 'user@test.com',
   emailVerified: true,
   image: null,
-  role: RoleConst.PLAYER,
+  role: RoleConst.USER,
   visibility: 'private',
   banned: null,
   banReason: null,
@@ -136,12 +136,12 @@ describe('[createCoachProfileService]', () => {
     expect(coachRepository.createCoachProfileDao).toHaveBeenCalledTimes(1)
   })
 
-  it("[PLAYER] devrait lever une erreur si l'utilisateur n'a pas le rôle COACH", async () => {
-    vi.mocked(getAuthUser).mockResolvedValue(playerUser)
+  it("[USER] devrait lever une erreur si l'utilisateur n'a pas le rôle COACH", async () => {
+    vi.mocked(getAuthUser).mockResolvedValue(standardUser)
 
     await expect(
       createCoachProfileService({
-        userId: playerUserId,
+        userId: userUserId,
         bio: 'Test',
         hourlyRate: '50.00',
       })
@@ -317,8 +317,8 @@ describe('[updateCoachProfileService]', () => {
     expect(coachRepository.updateCoachProfileDao).toHaveBeenCalledTimes(1)
   })
 
-  it('[PLAYER] devrait lever une erreur si un joueur tente de modifier un profil coach', async () => {
-    vi.mocked(getAuthUser).mockResolvedValue(playerUser)
+  it('[USER] devrait lever une erreur si un utilisateur tente de modifier un profil coach', async () => {
+    vi.mocked(getAuthUser).mockResolvedValue(standardUser)
     vi.mocked(coachRepository.getCoachProfileByIdDao).mockResolvedValue(
       mockCoachProfile
     )
@@ -373,7 +373,7 @@ describe('[hasCoachProfileService]', () => {
   it("devrait retourner false si l'utilisateur n'a pas de profil coach", async () => {
     vi.mocked(coachRepository.hasCoachProfileDao).mockResolvedValue(false)
 
-    const result = await hasCoachProfileService(playerUserId)
+    const result = await hasCoachProfileService(userUserId)
 
     expect(result).toBe(false)
   })

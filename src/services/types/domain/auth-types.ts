@@ -20,7 +20,7 @@ export interface SignInError {
 }
 
 //Roles Edgemy
-export const roleHierarchy = ['PLAYER', 'COACH', 'ADMIN'] satisfies Roles[]
+export const roleHierarchy = ['USER', 'COACH', 'ADMIN'] satisfies Roles[]
 
 // Context pour spécifier l'organisation COURANTE
 export interface OrganizationContext {
@@ -36,7 +36,7 @@ export const UserOrganizationRoleConst = {
 
 // Constantes pour les rôles Edgemy
 export const RoleConst = {
-  PLAYER: 'PLAYER' satisfies Roles,
+  USER: 'USER' satisfies Roles,
   COACH: 'COACH' satisfies Roles,
   ADMIN: 'ADMIN' satisfies Roles,
 } as const

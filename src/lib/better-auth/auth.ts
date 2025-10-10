@@ -99,7 +99,7 @@ const options = {
       role: {
         type: 'string',
         required: true,
-        defaultValue: 'PLAYER',
+        defaultValue: 'USER',
         input: false, // Ne pas permettre de définir le rôle via l'input utilisateur
       },
     },
@@ -313,14 +313,13 @@ function createDatabaseHooks() {
     user: {
       create: {
         before: async (user: User) => {
-          // S'assurer que le rôle est toujours défini
-          const role = (user as Record<string, unknown>).role || 'PLAYER'
-
+          // FORCER le rôle USER pour tous les nouveaux utilisateurs Edgemy
+          // Better Auth essaie de passer "user" par défaut, on doit l'écraser
           return {
             data: {
               ...user,
               name: user.name || user.email.split('@')[0],
-              role: role as 'PLAYER' | 'COACH' | 'ADMIN', // Forcer le type pour Edgemy
+              role: 'USER', // TOUJOURS USER par défaut, peu importe ce que Better Auth envoie
             },
           }
         },

@@ -29,7 +29,7 @@ async function seedEdgemy() {
   console.log('✅ Connexion réussie')
 
   try {
-    // 1. Insérer les utilisateurs Edgemy (PLAYER, COACH, ADMIN)
+    // 1. Insérer les utilisateurs Edgemy (USER, COACH, ADMIN)
     await client.query(`
       INSERT INTO "user" (email, name, email_verified, image, visibility, role)
       VALUES
@@ -41,11 +41,11 @@ async function seedEdgemy() {
         ('coach2@edgemy.fr', 'Sophie Martin', true, 'https://randomuser.me/api/portraits/med/women/11.jpg', 'public', 'COACH'),
         ('coach3@edgemy.fr', 'David Bernard', true, 'https://randomuser.me/api/portraits/med/men/7.jpg', 'public', 'COACH'),
         
-        -- Joueurs
-        ('player1@edgemy.fr', 'Lucas Petit', true, 'https://randomuser.me/api/portraits/med/men/3.jpg', 'public', 'PLAYER'),
-        ('player2@edgemy.fr', 'Emma Dubois', true, 'https://randomuser.me/api/portraits/med/women/14.jpg', 'public', 'PLAYER'),
-        ('player3@edgemy.fr', 'Thomas Leroy', true, 'https://randomuser.me/api/portraits/med/men/15.jpg', 'public', 'PLAYER'),
-        ('player4@edgemy.fr', 'Julie Moreau', true, 'https://randomuser.me/api/portraits/med/women/10.jpg', 'public', 'PLAYER')
+        -- Utilisateurs
+        ('user1@edgemy.fr', 'Lucas Petit', true, 'https://randomuser.me/api/portraits/med/men/3.jpg', 'public', 'USER'),
+        ('user2@edgemy.fr', 'Emma Dubois', true, 'https://randomuser.me/api/portraits/med/women/14.jpg', 'public', 'USER'),
+        ('user3@edgemy.fr', 'Thomas Leroy', true, 'https://randomuser.me/api/portraits/med/men/15.jpg', 'public', 'USER'),
+        ('user4@edgemy.fr', 'Julie Moreau', true, 'https://randomuser.me/api/portraits/med/women/10.jpg', 'public', 'USER')
       ON CONFLICT (email) DO NOTHING;
     `)
 
@@ -72,10 +72,10 @@ async function seedEdgemy() {
         'coach1@edgemy.fr',
         'coach2@edgemy.fr',
         'coach3@edgemy.fr',
-        'player1@edgemy.fr',
-        'player2@edgemy.fr',
-        'player3@edgemy.fr',
-        'player4@edgemy.fr'
+        'user1@edgemy.fr',
+        'user2@edgemy.fr',
+        'user3@edgemy.fr',
+        'user4@edgemy.fr'
       )
       ON CONFLICT ("account_id", "provider_id") DO NOTHING;
     `)
@@ -150,7 +150,7 @@ async function seedEdgemy() {
     console.log('👥 Utilisateurs créés :')
     console.log('  🔹 1 Admin : admin@edgemy.fr')
     console.log('  🔹 3 Coachs : coach1-3@edgemy.fr')
-    console.log('  🔹 4 Joueurs : player1-4@edgemy.fr')
+    console.log('  🔹 4 Utilisateurs : user1-4@edgemy.fr')
     console.log('')
     console.log('🎓 Profils coach créés :')
     console.log('  🔹 Pierre Dupont - ✅ Vérifié')

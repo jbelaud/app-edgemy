@@ -15,8 +15,8 @@ export const userVisibilityEnum = pgEnum('user_visibility', [
   'private',
 ])
 
-// Rôles Edgemy : PLAYER (joueur), COACH (coach), ADMIN (administrateur)
-export const roleEnum = pgEnum('role_type', ['PLAYER', 'COACH', 'ADMIN'])
+// Rôles Edgemy : USER (utilisateur standard), COACH (coach), ADMIN (administrateur), SUPER_ADMIN (super admin)
+export const roleEnum = pgEnum('role_type', ['USER', 'COACH', 'ADMIN'])
 export const user = pgTable('user', {
   id: uuid('id')
     .default(sql`uuid_generate_v4()`)
@@ -31,7 +31,7 @@ export const user = pgTable('user', {
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
   visibility: userVisibilityEnum('visibility').default('private').notNull(),
   twoFactorEnabled: boolean('two_factor_enabled'),
-  role: roleEnum('role').notNull().default('PLAYER'), // Par défaut, un utilisateur est un joueur
+  role: roleEnum('role').notNull().default('USER'), // Par défaut, un utilisateur standard
   banned: boolean('banned').default(false),
   banReason: text('ban_reason'),
   banExpires: timestamp('ban_expires'),

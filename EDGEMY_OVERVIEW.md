@@ -99,7 +99,7 @@ email
 
 password_hash
 
-role → PLAYER / COACH / ADMIN
+role → USER / COACH / ADMIN
 
 avatar_url
 
@@ -159,7 +159,7 @@ Sessions
 
 id
 
-player_id (FK vers Users)
+user_id (FK vers Users)
 
 coach_id (FK vers Users)
 
@@ -201,7 +201,7 @@ id
 
 session_id
 
-player_id
+user_id
 
 coach_id
 

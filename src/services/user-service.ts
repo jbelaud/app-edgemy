@@ -201,7 +201,7 @@ export const initializeRegisterUserDataService = async (
     await createUserDao({
       email,
       name: email.split('@')[0],
-      role: RoleConst.PLAYER, // Rôle par défaut pour Edgemy
+      role: RoleConst.USER, // Rôle par défaut pour Edgemy
     })
     user = await getUserByEmailDao(email)
   }

@@ -88,11 +88,11 @@ export function useAuthUserRole() {
 
   const isAdmin = user?.role === RoleConst.ADMIN
   const isCoach = user?.role === RoleConst.COACH
-  const isPlayer = user?.role === RoleConst.PLAYER
+  const isUser = user?.role === RoleConst.USER
 
   return {
     isAdmin,
     isCoach,
-    isPlayer,
+    isUser,
   }
 }
