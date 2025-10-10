@@ -134,31 +134,23 @@ const seed = async () => {
     ON CONFLICT (code) DO NOTHING;
   `)
 
-  // 1. Insérer les utilisateurs avec leurs rôles directement
+  // 1. Insérer les utilisateurs avec leurs rôles Edgemy (PLAYER, COACH, ADMIN)
   await client.query(`
     INSERT INTO "user" (email, name, email_verified, image, visibility, role)
     VALUES
-      -- Rôles globaux purs (sans organisations)
-      ('superadmin@gmail.com', 'Frank', true, 'https://randomuser.me/api/portraits/med/men/9.jpg', 'public', 'super_admin'),
-      ('admin@gmail.com', 'Admin', true, 'https://randomuser.me/api/portraits/med/men/4.jpg', 'public', 'admin'),
-      ('moderator@gmail.com', 'David', true, 'https://randomuser.me/api/portraits/med/men/7.jpg', 'public', 'moderator'),
-      ('redactor@gmail.com', 'Grace', true, 'https://randomuser.me/api/portraits/med/women/11.jpg', 'public', 'redactor'),
-      ('public@gmail.com', 'Charlie', true, 'https://randomuser.me/api/portraits/med/men/5.jpg', 'public', 'public'),
+      -- Administrateur
+      ('admin@edgemy.fr', 'Admin Edgemy', true, 'https://randomuser.me/api/portraits/med/men/9.jpg', 'public', 'ADMIN'),
       
-      -- Utilisateur multi-organisations (cas complexe)
-      ('user@gmail.com', 'Bob', true, 'https://randomuser.me/api/portraits/med/men/3.jpg', 'public', 'user'),
+      -- Coachs
+      ('coach1@edgemy.fr', 'Pierre Dupont', true, 'https://randomuser.me/api/portraits/med/men/4.jpg', 'public', 'COACH'),
+      ('coach2@edgemy.fr', 'Sophie Martin', true, 'https://randomuser.me/api/portraits/med/women/11.jpg', 'public', 'COACH'),
+      ('coach3@edgemy.fr', 'David Bernard', true, 'https://randomuser.me/api/portraits/med/men/7.jpg', 'public', 'COACH'),
       
-      -- Utilisateurs spécialisés par rôle organisationnel
-      ('user-owner@gmail.com', 'Julien', true, 'https://randomuser.me/api/portraits/med/men/6.jpg', 'public', 'user'),
-      ('user-admin@gmail.com', 'Sophie', true, 'https://randomuser.me/api/portraits/med/women/12.jpg', 'public', 'user'),
-      ('user-member@gmail.com', 'Lucas', true, 'https://randomuser.me/api/portraits/med/men/13.jpg', 'public', 'user'),
-      
-      -- Cas de chevauchement intéressants
-      ('admin-owner@gmail.com', 'Emma', true, 'https://randomuser.me/api/portraits/med/women/14.jpg', 'public', 'admin'),
-      ('moderator-member@gmail.com', 'Julie', true, 'https://randomuser.me/api/portraits/med/women/10.jpg', 'public', 'moderator'),
-      
-      -- Utilisateur isolé (sans organisations)
-      ('user-isolated@gmail.com', 'Thomas', true, 'https://randomuser.me/api/portraits/med/men/15.jpg', 'public', 'user')
+      -- Joueurs
+      ('player1@edgemy.fr', 'Lucas Petit', true, 'https://randomuser.me/api/portraits/med/men/3.jpg', 'public', 'PLAYER'),
+      ('player2@edgemy.fr', 'Emma Dubois', true, 'https://randomuser.me/api/portraits/med/women/14.jpg', 'public', 'PLAYER'),
+      ('player3@edgemy.fr', 'Thomas Leroy', true, 'https://randomuser.me/api/portraits/med/men/15.jpg', 'public', 'PLAYER'),
+      ('player4@edgemy.fr', 'Julie Moreau', true, 'https://randomuser.me/api/portraits/med/women/10.jpg', 'public', 'PLAYER')
     ON CONFLICT (email) DO NOTHING;
   `)
 
@@ -181,18 +173,14 @@ const seed = async () => {
       NOW() as "updated_at"
     FROM "user" u
     WHERE u.email IN (
-      'superadmin@gmail.com',
-      'admin@gmail.com',
-      'moderator@gmail.com',
-      'redactor@gmail.com',
-      'public@gmail.com',
-      'user@gmail.com',
-      'user-owner@gmail.com',
-      'user-admin@gmail.com',
-      'user-member@gmail.com',
-      'admin-owner@gmail.com',
-      'moderator-member@gmail.com',
-      'user-isolated@gmail.com'
+      'admin@edgemy.fr',
+      'coach1@edgemy.fr',
+      'coach2@edgemy.fr',
+      'coach3@edgemy.fr',
+      'player1@edgemy.fr',
+      'player2@edgemy.fr',
+      'player3@edgemy.fr',
+      'player4@edgemy.fr'
     )
     ON CONFLICT ("account_id", "provider_id") DO NOTHING;
   `)
@@ -215,36 +203,21 @@ const seed = async () => {
     )
     SELECT 
       u.id as "user_id",
-      CASE 
-        WHEN u.email = 'superadmin@gmail.com' THEN 'system'
-        ELSE 'dark'
-      END::theme_type as "theme",
-      CASE 
-        WHEN u.email = 'superadmin@gmail.com' THEN 'en'
-        ELSE 'fr'
-      END::language_type as "language",
+      'dark' as "theme",
+      'fr' as "language",
       'Europe/Paris' as "timezone",
-      CASE 
-        WHEN u.email = 'superadmin@gmail.com' THEN 'totp'
-        ELSE 'otp'
-      END::two_factor_type as "two_factor_type",
+      'otp' as "two_factor_type",
       true as "enable_email_notifications",
       true as "enable_push_notifications",
-      CASE 
-        WHEN u.email = 'superadmin@gmail.com' THEN 'both'
-        ELSE 'push'
-      END::notification_channel as "notification_channel",
+      'push' as "notification_channel",
       true as "email_digest",
-      CASE 
-        WHEN u.email = 'superadmin@gmail.com' THEN true
-        ELSE false
-      END as "marketing_emails",
+      false as "marketing_emails",
       NOW() as "created_at",
       NOW() as "updated_at"
     FROM "user" u
     WHERE u.email IN (
-      'superadmin@gmail.com',
-      'admin@gmail.com'
+      'admin@edgemy.fr',
+      'coach1@edgemy.fr'
     )
     ON CONFLICT (user_id) DO NOTHING;
   `)
