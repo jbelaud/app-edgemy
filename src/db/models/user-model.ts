@@ -8,7 +8,7 @@ import {
   uuid,
 } from 'drizzle-orm/pg-core'
 
-import {account, apikey, member, roleEnum, user} from './auth-model'
+import {account, apikey, roleEnum, user} from './auth-model'
 import {notifications} from './notification-model'
 
 // Enums pour les paramètres utilisateur
@@ -48,14 +48,11 @@ export const userSettings = pgTable('user_settings', {
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 })
 
-// Relations existantes
+// Relations utilisateur
 export const usersRelations = relations(user, ({one, many}) => ({
   account: one(account, {
     fields: [user.id],
     references: [account.userId],
-  }),
-  members: many(member, {
-    relationName: 'userToOrganizations',
   }),
   settings: one(userSettings, {
     fields: [user.id],
@@ -67,10 +64,6 @@ export const usersRelations = relations(user, ({one, many}) => ({
   apiKeys: many(apikey, {
     relationName: 'userToApiKeys',
   }),
-  // userOrganizations: many(userOrganizations, {
-  //   relationName: 'userToOrganizations',
-  // }),
-  // finances: many(finance),
 }))
 
 // Relations pour userSettings

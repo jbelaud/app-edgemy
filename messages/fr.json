@@ -1,7 +1,7 @@
 {
   "LocaleLayout": {
-    "title": "Next SaaS Boilerplate",
-    "description": "Next SaaS Boilerplate"
+    "title": "Edgemy",
+    "description": "Edgemy"
   },
   "LangToggle": {
     "label": "Changer de langue",
@@ -23,7 +23,7 @@
     "title": "La plateforme SaaS moderne pour booster votre business",
     "description": "Gérez, analysez et développez votre activité avec des outils puissants et une interface intuitive.",
     "metadata": {
-      "title": "Accueil - Next SaaS Boilerplate",
+      "title": "Accueil - Edgemy",
       "description": "La plateforme SaaS moderne pour booster votre business"
     },
     "navigation": {
@@ -623,7 +623,7 @@
     "LoginPage": {
       "title": "Connexion",
       "metadata": {
-        "title": "Connexion - Next SaaS Boilerplate",
+        "title": "Connexion - Edgemy",
         "description": "Connectez-vous à votre compte"
       }
     },
@@ -684,7 +684,7 @@
     "LogoutPage": {
       "title": "Déconnexion",
       "metadata": {
-        "title": "Déconnexion - Next SaaS Boilerplate",
+        "title": "Déconnexion - Edgemy",
         "description": "Se déconnecter de votre compte"
       }
     },
@@ -700,7 +700,7 @@
     "RegisterPage": {
       "title": "Inscription",
       "metadata": {
-        "title": "Inscription - Next SaaS Boilerplate",
+        "title": "Inscription - Edgemy",
         "description": "Créez votre compte"
       }
     },
@@ -760,7 +760,7 @@
     "ResetPasswordPage": {
       "title": "Réinitialisation du mot de passe",
       "metadata": {
-        "title": "Réinitialisation du mot de passe - Next SaaS Boilerplate",
+        "title": "Réinitialisation du mot de passe - Edgemy",
         "description": "Réinitialisez votre mot de passe"
       }
     },

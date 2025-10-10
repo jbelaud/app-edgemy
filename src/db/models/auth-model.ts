@@ -15,14 +15,8 @@ export const userVisibilityEnum = pgEnum('user_visibility', [
   'private',
 ])
 
-export const roleEnum = pgEnum('role_type', [
-  'public',
-  'user',
-  'redactor',
-  'moderator',
-  'admin',
-  'super_admin',
-])
+// Rôles Edgemy : PLAYER (joueur), COACH (coach), ADMIN (administrateur)
+export const roleEnum = pgEnum('role_type', ['PLAYER', 'COACH', 'ADMIN'])
 export const user = pgTable('user', {
   id: uuid('id')
     .default(sql`uuid_generate_v4()`)
@@ -37,7 +31,7 @@ export const user = pgTable('user', {
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
   visibility: userVisibilityEnum('visibility').default('private').notNull(),
   twoFactorEnabled: boolean('two_factor_enabled'),
-  role: roleEnum('role').notNull().default('user'),
+  role: roleEnum('role').notNull().default('PLAYER'), // Par défaut, un utilisateur est un joueur
   banned: boolean('banned').default(false),
   banReason: text('ban_reason'),
   banExpires: timestamp('ban_expires'),
@@ -137,25 +131,24 @@ export const twoFactor = pgTable('two_factor', {
     .references(() => user.id, {onDelete: 'cascade'}),
 })
 
-// Table des organisations
+// Tables organization et member
+export const organizationRoleEnum = pgEnum('organization_role', [
+  'owner',
+  'admin',
+  'member',
+])
+
 export const organization = pgTable('organization', {
   id: uuid('id')
     .default(sql`uuid_generate_v4()`)
     .primaryKey(),
   name: text('name').notNull(),
-  slug: text('slug').unique(),
-  description: text('description'),
-  createdAt: timestamp('created_at', {mode: 'date'}).defaultNow(),
-  updatedAt: timestamp('updated_at', {mode: 'date'}).defaultNow(),
+  slug: text('slug').notNull().unique(),
   logo: text('logo'),
-  metadata: text('metadata'),
+  description: text('description'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
 })
-
-export const organizationRoleEnum = pgEnum('organization_role', [
-  'admin',
-  'member',
-  'owner',
-])
 
 export const member = pgTable(
   'member',
@@ -169,41 +162,13 @@ export const member = pgTable(
     userId: uuid('user_id')
       .notNull()
       .references(() => user.id, {onDelete: 'cascade'}),
-    //role: text('role').default('member').notNull(),
-    role: organizationRoleEnum('role').default('member').notNull(),
-    createdAt: timestamp('created_at').notNull(),
+    role: organizationRoleEnum('role').notNull().default('member'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
   },
   (table) => ({
-    unq: unique().on(table.organizationId, table.userId),
+    memberUnique: unique().on(table.organizationId, table.userId),
   })
 )
-
-export const invitation = pgTable('invitation', {
-  id: uuid('id')
-    .default(sql`uuid_generate_v4()`)
-    .primaryKey(),
-  organizationId: uuid('organization_id')
-    .notNull()
-    .references(() => organization.id, {onDelete: 'cascade'}),
-  email: text('email').notNull(),
-  role: text('role'),
-  status: text('status').default('pending').notNull(),
-  expiresAt: timestamp('expires_at').notNull(),
-  inviterId: uuid('inviter_id')
-    .notNull()
-    .references(() => user.id, {onDelete: 'cascade'}),
-})
-
-export const invitationRelation = relations(invitation, ({one}) => ({
-  organization: one(organization, {
-    fields: [invitation.organizationId],
-    references: [organization.id],
-  }),
-  inviter: one(user, {
-    fields: [invitation.inviterId],
-    references: [user.id],
-  }),
-}))
 
 export const apikeyRelation = relations(apikey, ({one}) => ({
   user: one(user, {
@@ -213,6 +178,23 @@ export const apikeyRelation = relations(apikey, ({one}) => ({
   }),
 }))
 
-export type InvitationModel = typeof invitation.$inferSelect
-export type AddInvitationModel = typeof invitation.$inferInsert
-export type UpdateInvitationModel = typeof invitation.$inferInsert
+export const userRelations = relations(user, ({many}) => ({
+  members: many(member),
+  sessions: many(session),
+  accounts: many(account),
+}))
+
+export const organizationRelations = relations(organization, ({many}) => ({
+  members: many(member),
+}))
+
+export const memberRelations = relations(member, ({one}) => ({
+  organization: one(organization, {
+    fields: [member.organizationId],
+    references: [organization.id],
+  }),
+  user: one(user, {
+    fields: [member.userId],
+    references: [user.id],
+  }),
+}))

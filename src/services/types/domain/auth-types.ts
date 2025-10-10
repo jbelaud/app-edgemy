@@ -19,15 +19,8 @@ export interface SignInError {
   code?: string
 }
 
-//Roles GLOBAUX
-export const roleHierarchy = [
-  'public',
-  'user',
-  'redactor',
-  'moderator',
-  'admin',
-  'super_admin',
-] satisfies Roles[]
+//Roles Edgemy
+export const roleHierarchy = ['PLAYER', 'COACH', 'ADMIN'] satisfies Roles[]
 
 // Context pour spécifier l'organisation COURANTE
 export interface OrganizationContext {
@@ -41,12 +34,9 @@ export const UserOrganizationRoleConst = {
   MEMBER: 'member' as OrganizationRoleEnumModel,
 } as const
 
-// Constantes pour les rôles globaux
+// Constantes pour les rôles Edgemy
 export const RoleConst = {
-  PUBLIC: 'public' satisfies Roles,
-  USER: 'user' satisfies Roles,
-  REDACTOR: 'redactor' satisfies Roles,
-  MODERATOR: 'moderator' satisfies Roles,
-  ADMIN: 'admin' satisfies Roles,
-  SUPER_ADMIN: 'super_admin' satisfies Roles,
+  PLAYER: 'PLAYER' satisfies Roles,
+  COACH: 'COACH' satisfies Roles,
+  ADMIN: 'ADMIN' satisfies Roles,
 } as const

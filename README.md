@@ -1,6 +1,6 @@
-# ShipSaaS a Next.js SaaS Boilerplate
+# Edgemy - Plateforme de Coaching Poker
 
-Un boilerplate moderne pour les applications SaaS utilisant Next.js 15, React 19, et ShadCN UI.
+Une plateforme moderne pour les applications de coaching poker utilisant Next.js 15, React 19, et ShadCN UI.
 
 > **Documentation complète:** [https://ship-saas.now/fr/docs](https://ship-saas.now/fr/docs)
 

@@ -1,6 +1,6 @@
 {
-  "name": "next-saas-boilerplate",
-  "description": "Next.js SaaS Boilerplate by Mike Codeur",
+  "name": "edgemy",
+  "description": "Edgemy - Plateforme de Coaching Poker",
   "version": "0.1.0",
   "private": true,
   "type": "module",

@@ -8,8 +8,6 @@ import {
   getAuthUser,
   getSessionReferenceId,
 } from '../authentication/auth-service'
-import {getMembersAndInvitationsService} from '../organization-service'
-import {getProjectsByOrganizationService} from '../project-service'
 import {
   checkSubscriptionLimitService,
   getPlanByCodeService,
@@ -120,13 +118,13 @@ export const checkSubscriptionLimit = async (
   let currentUsage = 0
   switch (limitType) {
     case LimitTypeConst.PROJECTS: {
-      const projects = await getProjectsByOrganizationService(referenceId) //todo
-      currentUsage = projects.length
+      // TODO: Implémenter le comptage des projets si nécessaire pour Edgemy
+      currentUsage = 0
       break
     }
     case LimitTypeConst.USERS: {
-      const members = await getMembersAndInvitationsService(referenceId) //todo attention en billingmodeuser
-      currentUsage = members.length
+      // Pour Edgemy, un utilisateur = 1 (pas de concept d'organisation multi-utilisateurs)
+      currentUsage = 1
       break
     }
     case LimitTypeConst.STORAGE:

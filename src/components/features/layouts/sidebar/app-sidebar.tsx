@@ -13,12 +13,10 @@ import {useTranslations} from 'next-intl'
 import * as React from 'react'
 
 import {useAuth} from '@/components/context/auth-provider'
-import {useOrganization} from '@/components/context/organization-provider'
 import {NavAdmin} from '@/components/features/layouts/sidebar/nav-admin'
 import {NavMain} from '@/components/features/layouts/sidebar/nav-main'
 import {NavProjects} from '@/components/features/layouts/sidebar/nav-projects'
 import {NavUser} from '@/components/features/layouts/sidebar/nav-user'
-import {TeamSwitcher} from '@/components/team-switcher'
 import {
   Sidebar,
   SidebarContent,
@@ -33,15 +31,10 @@ import {isAdmin} from '@/services/authentication/auth-util'
 
 export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
   const t = useTranslations('AppSidebar')
-  const {organizations, currentOrganization} = useOrganization()
   const {user} = useAuth()
 
   // États dérivés avec mémorisation
   const isAdminUser = React.useMemo(() => isAdmin(user) ?? false, [user])
-  const currentOrgSlug = React.useMemo(
-    () => currentOrganization?.slug || 'default',
-    [currentOrganization]
-  )
 
   // Génération du menu avec traductions
   const translatedMenuData: MenuData = React.useMemo(
@@ -93,22 +86,6 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
                   },
                 ]
               : []),
-            ...(isPageEnabled(PagesConst.ORGANIZATION)
-              ? [
-                  {
-                    title: t('account.organizations'),
-                    url: '/account/organizations',
-                  },
-                ]
-              : []),
-            ...(isPageEnabled(PagesConst.INVITATION)
-              ? [
-                  {
-                    title: t('account.invitations'),
-                    url: '/account/invitations',
-                  },
-                ]
-              : []),
           ],
         },
         {
@@ -120,10 +97,6 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
             {
               title: t('projects.dashboard'),
               url: '/dashboard',
-            },
-            {
-              title: t('projects.projects'),
-              url: '/team/{{orgSlug}}/projects',
             },
           ],
         },
@@ -193,27 +166,13 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
 
   // Construction dynamique du menu avec mémorisation
   const menuItems = React.useMemo(
-    () => buildMenu(translatedMenuData, currentOrgSlug),
-    [currentOrgSlug, translatedMenuData]
-  )
-
-  // Transformation des organisations en équipes
-  const teams = React.useMemo(
-    () =>
-      organizations?.map((org) => ({
-        id: org.organization?.id ?? '',
-        name: org.organization?.name ?? 'No name',
-        logo: BookOpen,
-        plan: org.organization?.description || 'Default plan',
-      })) || [],
-    [organizations]
+    () => buildMenu(translatedMenuData, 'default'),
+    [translatedMenuData]
   )
 
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
-        <TeamSwitcher teams={teams} />
-      </SidebarHeader>
+      <SidebarHeader>{/* Logo ou titre de l'app ici */}</SidebarHeader>
       <SidebarContent>
         {isAdminUser && isPageEnabled(PagesConst.ADMIN) && (
           <NavAdmin adminItems={translatedMenuData.adminNavMain} />

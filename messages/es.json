@@ -1,7 +1,7 @@
 {
   "LocaleLayout": {
-    "title": "Next SaaS Boilerplate",
-    "description": "Next SaaS Boilerplate"
+    "title": "Edgemy",
+    "description": "Edgemy"
   },
   "LangToggle": {
     "label": "Cambiar idioma",
@@ -23,7 +23,7 @@
     "title": "Plataforma SaaS moderna para impulsar tu negocio",
     "description": "Gestiona, analiza y desarrolla tu actividad con herramientas potentes y una interfaz intuitiva.",
     "metadata": {
-      "title": "Inicio - Next SaaS Boilerplate",
+      "title": "Inicio - Edgemy",
       "description": "Plataforma SaaS moderna para impulsar tu negocio"
     },
     "navigation": {
@@ -623,7 +623,7 @@
     "LoginPage": {
       "title": "Iniciar Sesión",
       "metadata": {
-        "title": "Iniciar Sesión - Next SaaS Boilerplate",
+        "title": "Iniciar Sesión - Edgemy",
         "description": "Accede a tu cuenta"
       }
     },
@@ -684,7 +684,7 @@
     "LogoutPage": {
       "title": "Cerrar Sesión",
       "metadata": {
-        "title": "Cerrar Sesión - Next SaaS Boilerplate",
+        "title": "Cerrar Sesión - Edgemy",
         "description": "Salir de tu cuenta"
       }
     },
@@ -700,7 +700,7 @@
     "RegisterPage": {
       "title": "Registrarse",
       "metadata": {
-        "title": "Registrarse - Next SaaS Boilerplate",
+        "title": "Registrarse - Edgemy",
         "description": "Crea tu cuenta"
       }
     },
@@ -760,7 +760,7 @@
     "ResetPasswordPage": {
       "title": "Restablecer Contraseña",
       "metadata": {
-        "title": "Restablecer Contraseña - Next SaaS Boilerplate",
+        "title": "Restablecer Contraseña - Edgemy",
         "description": "Restablece tu contraseña"
       }
     },

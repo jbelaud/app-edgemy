@@ -1,7 +1,7 @@
 {
   "LocaleLayout": {
-    "title": "Next SaaS Boilerplate",
-    "description": "Next SaaS Boilerplate"
+    "title": "Edgemy",
+    "description": "Edgemy"
   },
   "LangToggle": {
     "label": "Change language",
@@ -23,7 +23,7 @@
     "title": "Modern SaaS platform to boost your business",
     "description": "Manage, analyze and grow your business with powerful tools and an intuitive interface.",
     "metadata": {
-      "title": "Home - Next SaaS Boilerplate",
+      "title": "Home - Edgemy",
       "description": "Modern SaaS platform to boost your business"
     },
     "navigation": {
@@ -623,7 +623,7 @@
     "LoginPage": {
       "title": "Login",
       "metadata": {
-        "title": "Login - Next SaaS Boilerplate",
+        "title": "Login - Edgemy",
         "description": "Sign in to your account"
       }
     },
@@ -684,7 +684,7 @@
     "LogoutPage": {
       "title": "Logout",
       "metadata": {
-        "title": "Logout - Next SaaS Boilerplate",
+        "title": "Logout - Edgemy",
         "description": "Sign out of your account"
       }
     },
@@ -700,7 +700,7 @@
     "RegisterPage": {
       "title": "Register",
       "metadata": {
-        "title": "Register - Next SaaS Boilerplate",
+        "title": "Register - Edgemy",
         "description": "Create your account"
       }
     },
@@ -760,7 +760,7 @@
     "ResetPasswordPage": {
       "title": "Password Reset",
       "metadata": {
-        "title": "Password Reset - Next SaaS Boilerplate",
+        "title": "Password Reset - Edgemy",
         "description": "Reset your password"
       }
     },

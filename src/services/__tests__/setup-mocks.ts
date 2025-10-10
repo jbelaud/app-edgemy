@@ -31,5 +31,44 @@ vi.mock('@/lib/logger', () => ({
   logger: {
     info: vi.fn(),
     debug: vi.fn(),
+    error: vi.fn(),
+    warn: vi.fn(),
+  },
+}))
+
+// Mock des variables d'environnement
+vi.mock('@/env', () => ({
+  env: {
+    NODE_ENV: 'test',
+    DATABASE_URL: 'postgresql://test:test@localhost:5432/test',
+    BETTER_AUTH_SECRET: 'test-secret-key-minimum-32-characters-long',
+    BETTER_AUTH_URL: 'http://localhost:3000',
+    STRIPE_SECRET_KEY: 'sk_test_mock_key',
+    STRIPE_WEBHOOK_SECRET: 'whsec_mock_secret',
+    RESEND_API_KEY: 're_test_mock_key',
+  },
+}))
+
+// Mock Stripe
+vi.mock('@/lib/stripe/stripe-client', () => ({
+  stripeClient: {
+    customers: {
+      create: vi.fn(),
+      retrieve: vi.fn(),
+    },
+    subscriptions: {
+      create: vi.fn(),
+      retrieve: vi.fn(),
+    },
+  },
+  stripe: {
+    customers: {
+      create: vi.fn(),
+      retrieve: vi.fn(),
+    },
+    subscriptions: {
+      create: vi.fn(),
+      retrieve: vi.fn(),
+    },
   },
 }))

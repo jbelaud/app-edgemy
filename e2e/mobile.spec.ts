@@ -14,7 +14,7 @@ test.describe('Mobile Navigation', () => {
     await page.goto('/')
 
     // Check if the page loads with correct title
-    await expect(page).toHaveTitle(/Next SaaS Boilerplate/)
+    await expect(page).toHaveTitle(/Edgemy/)
 
     // Check for hero content
     await expect(page.getByText('Modern SaaS platform')).toBeVisible()

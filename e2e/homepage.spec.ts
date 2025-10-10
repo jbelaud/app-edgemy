@@ -5,7 +5,7 @@ test.describe('Homepage', () => {
     await page.goto('/')
 
     // Check if the page loads with correct title
-    await expect(page).toHaveTitle(/Next SaaS Boilerplate/)
+    await expect(page).toHaveTitle(/Edgemy/)
 
     // Check for main hero heading specifically
     await expect(
