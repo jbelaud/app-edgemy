@@ -1,0 +1,1299 @@
+{
+  "LocaleLayout": {
+    "title": "Next SaaS Boilerplate",
+    "description": "Next SaaS Boilerplate"
+  },
+  "LangToggle": {
+    "label": "Change language",
+    "languages": {
+      "fr": "Français",
+      "en": "English",
+      "es": "Español"
+    }
+  },
+  "PublicLayout": {
+    "title": "Public Page",
+    "description": "Public Page"
+  },
+  "AuthLayout": {
+    "title": "Authentication",
+    "description": "Authentication"
+  },
+  "HomePage": {
+    "title": "Modern SaaS platform to boost your business",
+    "description": "Manage, analyze and grow your business with powerful tools and an intuitive interface.",
+    "metadata": {
+      "title": "Home - Next SaaS Boilerplate",
+      "description": "Modern SaaS platform to boost your business"
+    },
+    "navigation": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Modern SaaS platform to boost your business",
+      "description": "Manage, analyze and grow your business with powerful tools and an intuitive interface.",
+      "cta": "Try for free"
+    },
+    "features": {
+      "title": "Features",
+      "subtitle": "Discover what makes our platform unique",
+      "automation": {
+        "title": "Automation",
+        "description": "Automate your repetitive tasks and save time daily."
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Get detailed reports to drive your growth."
+      },
+      "security": {
+        "title": "Optimal Security",
+        "description": "Your data is protected with our secure infrastructure."
+      }
+    },
+    "footer": {
+      "byMike": "By Mike Codeur",
+      "allRightsReserved": "All rights reserved.",
+      "product": {
+        "title": "Product",
+        "features": "Features",
+        "pricing": "Pricing",
+        "demo": "Demo",
+        "updates": "Updates"
+      },
+      "resources": {
+        "title": "Resources",
+        "documentation": "Documentation",
+        "blog": "Blog",
+        "support": "Support",
+        "api": "API"
+      },
+      "legal": {
+        "title": "Legal & Contact",
+        "terms": "Legal Notice",
+        "privacy": "Privacy Policy",
+        "contact": "Contact",
+        "careers": "Careers"
+      }
+    }
+  },
+  "TermsPage": {
+    "title": "Terms of Use",
+    "description": "Terms of use page",
+    "terms": [
+      {
+        "title": "Introduction",
+        "contents": [
+          "By using this service, you agree to the terms of use. Please read them carefully before accessing or using the service.",
+          "This service is designed to help entrepreneurs manage their finances and sports activities. Its use is subject to the conditions set out below."
+        ]
+      },
+      {
+        "title": "Acceptance of Terms",
+        "contents": [
+          "By accessing or using this service, you agree to be bound by these terms. If you do not agree to these terms, please do not use the service.",
+          "We reserve the right to modify these terms at any time. Any changes will be posted on this page. Your continued use of the service after such modifications constitutes your acceptance of said modifications."
+        ]
+      },
+      {
+        "title": "Use of Service",
+        "contents": [
+          "You are responsible for maintaining the confidentiality of your login information.",
+          "You agree not to use the service for illegal or unauthorized purposes.",
+          "You agree not to access the source code of the service or modify it in any way.",
+          "You agree not to use the service for any activity that could harm the security or integrity of the service or any other computer system."
+        ]
+      },
+      {
+        "title": "User Data",
+        "contents": [
+          "You retain ownership of all data you enter or upload to the service.",
+          "We will not claim any ownership rights to your data.",
+          "You consent to our use of your data to provide and improve the service, as well as for analytical and marketing purposes."
+        ]
+      },
+      {
+        "title": "Limitation of Liability",
+        "contents": [
+          "We will not be liable for direct, indirect, incidental, special or consequential damages arising from the use or inability to use the service.",
+          "We do not guarantee that the service will be error-free or uninterrupted."
+        ]
+      },
+      {
+        "title": "Applicable Law",
+        "contents": [
+          "These terms are governed by the laws in force in your country of residence.",
+          "Any dispute arising from these terms will be subject to the exclusive jurisdiction of the competent courts of your country of residence."
+        ]
+      }
+    ]
+  },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for.",
+    "goBackHome": "Go Back Home"
+  },
+  "AppSidebar": {
+    "admin": {
+      "title": "Administration",
+      "dashboard": "Admin Dashboard",
+      "users": "Users",
+      "organizations": "Organizations",
+      "plans": "Plans",
+      "blog": "Blog"
+    },
+    "account": {
+      "title": "Account",
+      "accountAndSecurity": "Account & Security",
+      "subscriptions": "Subscriptions",
+      "organizations": "Organizations",
+      "invitations": "Invitations",
+      "settings": "Settings",
+      "apiKeys": "API Keys"
+    },
+    "projects": {
+      "title": "Projects",
+      "dashboard": "Dashboard",
+      "projects": "Projects"
+    },
+    "models": {
+      "title": "Models",
+      "genesis": "Genesis",
+      "explorer": "Explorer",
+      "quantum": "Quantum"
+    },
+    "documentation": {
+      "title": "Documentation",
+      "introduction": "Introduction",
+      "getStarted": "Get Started",
+      "tutorials": "Tutorials",
+      "changelog": "Changelog"
+    },
+    "projectsList": {
+      "designEngineering": "Design Engineering",
+      "salesMarketing": "Sales & Marketing",
+      "travel": "Travel"
+    }
+  },
+  "NavUser": {
+    "upgradeToPro": "Upgrade to Pro",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "account": "Account",
+    "apiKeys": "API Keys",
+    "settings": "Settings",
+    "billing": "Billing",
+    "notifications": "Notifications",
+    "logout": "Log out"
+  },
+  "AccountPage": {
+    "title": "My Account",
+    "profile": {
+      "title": "Profile",
+      "description": "Manage your personal information"
+    },
+    "security": {
+      "title": "Security",
+      "description": "Manage your account security settings, including two-factor authentication, password and email changes."
+    },
+    "EditUserProfileForm": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email"
+      },
+      "visibility": {
+        "label": "Profile Visibility",
+        "placeholder": "Select visibility",
+        "public": "Public",
+        "private": "Private"
+      },
+      "upload": {
+        "inProgress": "Upload in progress...",
+        "success": "Image uploaded successfully",
+        "error": "Upload error",
+        "errorRetry": "Unable to upload image. Please try again."
+      },
+      "form": {
+        "save": "Save",
+        "updating": "Updating...",
+        "success": "Profile updated successfully",
+        "error": "Error updating profile",
+        "undo": "Undo",
+        "ok": "OK",
+        "validationFailed": "Validation error",
+        "userNotFound": "User not found",
+        "invalidData": "Invalid data",
+        "updateFailed": "Failed to update profile",
+        "nameValidationError": "Name must not contain two consecutive spaces"
+      },
+      "validation": {
+        "name": {
+          "required": "Name is required",
+          "min": "Name must be at least 2 characters",
+          "invalid": "Invalid name"
+        },
+        "email": {
+          "required": "Email is required",
+          "invalid": "Invalid email address",
+          "format": "Invalid email format"
+        },
+        "image": {
+          "invalid": "Invalid image URL"
+        },
+        "visibility": {
+          "required": "Visibility is required",
+          "invalid": "Invalid visibility value"
+        },
+        "uuid": {
+          "invalid": "Invalid UUID"
+        },
+        "id": {
+          "invalid": "Invalid UUID"
+        }
+      }
+    },
+    "UserSecuritySection": {
+      "changePassword": {
+        "title": "Change Password",
+        "description": "Update your password to secure your account",
+        "currentPassword": "Current Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password",
+        "submit": "Change Password",
+        "updating": "Updating...",
+        "success": "Password updated successfully",
+        "error": "Error changing password"
+      },
+      "changeEmail": {
+        "title": "Change Email Address",
+        "description": "Update your primary email address",
+        "currentEmail": "Current Email",
+        "newEmail": "New Email",
+        "submit": "Change Email",
+        "updating": "Updating...",
+        "success": "Email updated successfully",
+        "error": "Error changing email"
+      },
+      "twoFactor": {
+        "title": "Two-Factor Authentication",
+        "description": "Add an extra layer of security to your account",
+        "enable": "Enable 2FA",
+        "disable": "Disable 2FA",
+        "status": {
+          "title": "Current Status",
+          "enabled": "Two-factor authentication enabled",
+          "disabled": "Two-factor authentication disabled"
+        },
+        "typeSelection": {
+          "title": "Authentication Type",
+          "description": "Choose your preferred method for two-factor authentication",
+          "totp": "TOTP",
+          "otp": "OTP",
+          "updating": "Updating...",
+          "help": "TOTP: Authentication app (Google Auth, Authy) | OTP: Codes sent by email",
+          "error": "You must first enable two-factor authentication",
+          "successTotp": "2FA type changed to TOTP",
+          "successOtp": "2FA type changed to OTP"
+        },
+        "modal": {
+          "enableTitle": "Enable Two-Factor Authentication",
+          "disableTitle": "Disable Two-Factor Authentication",
+          "enableDescription": "To enable two-factor authentication, please confirm your password.",
+          "disableDescription": "To disable two-factor authentication, please confirm your password.",
+          "password": "Password",
+          "passwordPlaceholder": "Enter your password",
+          "cancel": "Cancel",
+          "enable": "Enable 2FA",
+          "disable": "Disable 2FA",
+          "processing": "Processing..."
+        },
+        "setup": {
+          "title": "2FA Setup Successful",
+          "description": "Your two-factor authentication has been enabled. Scan the QR code and note your backup codes.",
+          "qrCode": "QR Code",
+          "qrDescription": "Scan this QR code with your authentication app (Google Authenticator, Authy, etc.)",
+          "backupCodes": "Backup Codes",
+          "backupDescription": "Keep these codes safe. They will allow you to access your account if you lose your device.",
+          "totpUri": "TOTP URI (optional)",
+          "totpDescription": "If the QR code doesn't work, you can use this URI manually:",
+          "validate": "Validate Configuration",
+          "configured": "I've configured my app"
+        },
+        "validation": {
+          "title": "Validate 2FA Configuration",
+          "description": "Enter the first backup code to validate that your authentication app works correctly.",
+          "codeLabel": "Validation Code",
+          "codePlaceholder": "Enter the first backup code",
+          "codeHelper": "Use the first code from the list:",
+          "cancel": "Cancel",
+          "validate": "Validate",
+          "validating": "Validating...",
+          "error": "Please enter a validation code",
+          "errorGeneral": "Error validating the code."
+        },
+        "success": "Success",
+        "error": "Error"
+      },
+      "sessions": {
+        "title": "Active Sessions",
+        "description": "Manage your login sessions",
+        "current": "Current Session",
+        "revoke": "Revoke",
+        "revokeAll": "Revoke All Other Sessions"
+      },
+      "listTokens": {
+        "title": "Active Sessions",
+        "description": "Manage your sessions and access tokens. You can revoke suspicious or unused sessions.",
+        "loading": "Loading sessions...",
+        "noSessions": "No active sessions found",
+        "table": {
+          "device": "Device",
+          "ipAddress": "IP Address",
+          "token": "Token",
+          "lastActivity": "Last Activity",
+          "actions": "Actions",
+          "notAvailable": "Not available"
+        },
+        "actions": {
+          "copyToken": "Copy token",
+          "copyFullToken": "Copy full token",
+          "revoke": "Revoke",
+          "revoking": "Revoking...",
+          "refresh": "Refresh"
+        },
+        "success": {
+          "sessionRevoked": "Session revoked successfully",
+          "tokenCopied": "Token copied to clipboard"
+        },
+        "errors": {
+          "loadSessions": "Unable to load sessions",
+          "revokeSession": "Unable to revoke session",
+          "copyToken": "Unable to copy token"
+        },
+        "device": {
+          "unknown": "Unknown browser"
+        },
+        "sessionCount": "{count, plural, =0 {No active sessions} one {# active session} other {# active sessions}}"
+      }
+    }
+  },
+  "ApiKeysPage": {
+    "title": "API Keys",
+    "description": "Manage your API keys for external integrations",
+    "management": {
+      "title": "API Key Management",
+      "description": "Create and manage API keys to access your account programmatically"
+    },
+    "actions": {
+      "createKey": "Create API Key",
+      "cancel": "Cancel",
+      "create": "Create",
+      "creating": "Creating...",
+      "delete": "Delete",
+      "done": "Done"
+    },
+    "createDialog": {
+      "title": "Create New API Key",
+      "description": "Create a new API key for your application",
+      "nameLabel": "Key Name",
+      "namePlaceholder": "Enter a descriptive name for this API key",
+      "expirationLabel": "Expiration",
+      "neverExpires": "Never expires",
+      "expiresAtLabel": "Expires at",
+      "expirationHelp": "Choose when this API key should expire for security",
+      "newKeyLabel": "Your new API key",
+      "keyWarning": "⚠️ This is the only time you'll see this key. Copy it and store it securely."
+    },
+    "deleteDialog": {
+      "title": "Delete API Key",
+      "description": "Are you sure you want to delete the API key \"{name}\"? This action cannot be undone and will immediately revoke access for applications using this key."
+    },
+    "table": {
+      "name": "Name",
+      "key": "Key",
+      "created": "Created",
+      "expires": "Expires",
+      "actions": "Actions",
+      "noKeys": "No API keys found. Create your first API key to get started.",
+      "never": "Never",
+      "keyHidden": "Key is hidden for security reasons"
+    },
+    "messages": {
+      "keyCreated": "API key created successfully",
+      "keyDeleted": "API key deleted successfully",
+      "copiedToClipboard": "Copied to clipboard"
+    },
+    "errors": {
+      "nameRequired": "API key name is required",
+      "loadFailed": "Failed to load API keys",
+      "createFailed": "Failed to create API key",
+      "deleteFailed": "Failed to delete API key",
+      "invalidExpiration": "Expiration date must be in the future"
+    }
+  },
+  "AccountSettingsPage": {
+    "title": "Settings",
+    "settings": {
+      "title": "Settings",
+      "description": "Configure your application preferences"
+    },
+    "appearance": {
+      "title": "Appearance",
+      "theme": {
+        "label": "Theme",
+        "placeholder": "Select a theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      },
+      "language": {
+        "label": "Language",
+        "placeholder": "Select a language",
+        "fr": "Français",
+        "en": "English",
+        "es": "Español",
+        "de": "Deutsch"
+      }
+    },
+    "notifications": {
+      "title": "Notifications",
+      "channel": {
+        "label": "Notification channel",
+        "placeholder": "Select a channel",
+        "email": "Email only",
+        "push": "Push notifications only",
+        "both": "Both",
+        "none": "No notifications"
+      },
+      "emailNotifications": {
+        "title": "Email notifications",
+        "description": "Receive important notifications via email"
+      },
+      "pushNotifications": {
+        "title": "Push notifications",
+        "description": "Receive real-time notifications"
+      },
+      "emailDigest": {
+        "title": "Daily email digest",
+        "description": "Receive a daily summary of your activities"
+      }
+    },
+    "marketing": {
+      "title": "Marketing",
+      "marketingEmails": {
+        "title": "Marketing emails",
+        "description": "Receive special offers and updates"
+      }
+    },
+    "form": {
+      "updating": "Updating...",
+      "updateSettings": "Update settings",
+      "success": "Success",
+      "error": "Error"
+    }
+  },
+  "ui": {
+    "fileUpload": {
+      "title": {
+        "uploading": "Uploading...",
+        "image": "Upload image",
+        "file": "Upload file"
+      },
+      "description": {
+        "uploading": "Please wait while your files are being uploaded",
+        "image": {
+          "single": "Drag or drop your image here or click to upload (WebP, JPEG, PNG)",
+          "multiple": "Drag or drop your images here or click to upload (WebP, JPEG, PNG)"
+        },
+        "file": {
+          "single": "Drag or drop your file here or click to upload",
+          "multiple": "Drag or drop your files here or click to upload"
+        }
+      },
+      "dropIt": "Drop it",
+      "errors": {
+        "imageOnly": "Only images are allowed (WebP, JPEG, JPG, PNG)",
+        "fileTooLarge": "File is too large. Maximum size: {maxSize} MB"
+      },
+      "fileInfo": {
+        "modified": "modified {date}"
+      }
+    }
+  },
+  "Service": {
+    "User": {
+      "validation": {
+        "name": {
+          "min": "Name must be at least 3 characters",
+          "max": "Name must not contain more than 30 characters",
+          "required": "Name is required",
+          "invalid": "Invalid name"
+        },
+        "email": {
+          "invalid": "Email is not valid",
+          "required": "Email is required",
+          "format": "Invalid email format"
+        },
+        "uuid": {
+          "invalid": "Identifier is not valid"
+        }
+      }
+    }
+  },
+  "services": {
+    "domain": {
+      "user": {
+        "validation": {
+          "name": {
+            "min": "Name must be at least 3 characters",
+            "max": "Name must not contain more than 30 characters",
+            "required": "Name is required",
+            "invalid": "Invalid name"
+          },
+          "email": {
+            "invalid": "Email is not valid",
+            "required": "Email is required",
+            "format": "Invalid email format"
+          },
+          "uuid": {
+            "invalid": "Identifier is not valid"
+          }
+        }
+      },
+      "notification": {
+        "reset_password": {
+          "title": "Password Reset",
+          "message": "A password reset request has been made for your account."
+        },
+        "email_verification": {
+          "title": "Email Verification",
+          "message": "Please verify your email address to activate your account."
+        },
+        "magic_link": {
+          "title": "Magic Link",
+          "message": "A magic link has been sent to your email address."
+        },
+        "otp_code": {
+          "title": "Verification Code",
+          "message": "Your one-time verification code for two-factor authentication."
+        },
+        "password_changed": {
+          "title": "Password Changed",
+          "message": "Your password has been successfully changed."
+        },
+        "change_email_verification": {
+          "title": "Email Change Verification",
+          "message": "Please confirm your email address change by clicking the link sent to your current email address."
+        },
+        "organization_invitation": {
+          "title": "Organization Invitation",
+          "message": "You have been invited to join an organization.",
+          "title_invited": "You have invited {email} to join the organization {organizationName}.",
+          "message_invited": "You have invited {email} to join the organization {organizationName}."
+        },
+        "subscription_created": {
+          "title": "Subscription Created",
+          "message": "Your subscription has been created successfully."
+        },
+        "subscription_updated": {
+          "title": "Subscription Updated",
+          "message": "Your subscription has been updated successfully."
+        },
+        "subscription_canceled": {
+          "title": "Subscription Canceled",
+          "message": "Your subscription has been canceled. It will remain active until the end of the billing period."
+        },
+        "subscription_deleted": {
+          "title": "Subscription Deleted",
+          "message": "Your subscription has been permanently deleted."
+        },
+        "project_created": {
+          "title": "Project Created",
+          "message": "Your project has been created successfully."
+        }
+      }
+    }
+  },
+  "Auth": {
+    "LoginPage": {
+      "title": "Login",
+      "metadata": {
+        "title": "Login - Next SaaS Boilerplate",
+        "description": "Sign in to your account"
+      }
+    },
+    "LoginForm": {
+      "welcome": "Welcome",
+      "description": "Sign in with your email and password",
+      "descriptionMagicLink": "Enter your email to receive a login link",
+      "providers": {
+        "apple": "Sign in with Apple",
+        "google": "Sign in with Google",
+        "github": "Sign in with GitHub",
+        "magicLink": "Sign in with Magic Link"
+      },
+      "loading": {
+        "connecting": "Connecting...",
+        "apple": "Connecting...",
+        "google": "Connecting...",
+        "github": "Connecting..."
+      },
+      "backToClassic": "Back to classic login",
+      "backToOptions": "Back to login options",
+      "terms": "By continuing, you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and our",
+      "privacyLink": "Privacy Policy",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up"
+    },
+    "CredentialForm": {
+      "orContinueWith": "Or continue with",
+      "email": {
+        "label": "Email",
+        "placeholder": "user@gmail.com"
+      },
+      "password": {
+        "label": "Password",
+        "forgotPassword": "Forgot password?"
+      },
+      "submit": "Sign in",
+      "submitting": "Signing in..."
+    },
+    "MagicLinkForm": {
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "submit": "Send magic link",
+      "submitting": "Sending...",
+      "checkEmail": "Check your email",
+      "linkSent": "A login link has been sent to your email address."
+    },
+    "messages": {
+      "success": "Success",
+      "error": "Error",
+      "loginError": "Login error",
+      "providerError": "Error signing in with {provider}"
+    },
+    "LogoutPage": {
+      "title": "Logout",
+      "metadata": {
+        "title": "Logout - Next SaaS Boilerplate",
+        "description": "Sign out of your account"
+      }
+    },
+    "LogoutForm": {
+      "title": "Logout",
+      "description": "Sign out of {appName}",
+      "confirmLogout": "Are you sure you want to log out?",
+      "logoutButton": "Log out",
+      "loggingOut": "Logging out...",
+      "backToDashboard": "Have an account?",
+      "dashboardLink": "Dashboard"
+    },
+    "RegisterPage": {
+      "title": "Register",
+      "metadata": {
+        "title": "Register - Next SaaS Boilerplate",
+        "description": "Create your account"
+      }
+    },
+    "RegisterForm": {
+      "title": "Create an account",
+      "description": "Sign up to access your personal space",
+      "descriptionChoose": "Choose your registration method",
+      "providers": {
+        "apple": "Sign up with Apple",
+        "google": "Sign up with Google",
+        "github": "Sign up with GitHub",
+        "magicLink": "Sign up with Magic Link"
+      },
+      "or": "Or",
+      "createWithEmail": "Create account with email",
+      "backToOptions": "Back to registration options",
+      "form": {
+        "fullName": {
+          "label": "Full name",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "john@example.com"
+        },
+        "password": {
+          "label": "Password"
+        },
+        "confirmPassword": {
+          "label": "Confirm password"
+        },
+        "submit": "Sign up",
+        "submitting": "Signing up...",
+        "generalError": "An error occurred during registration"
+      },
+      "alreadyAccount": "Already have an account?",
+      "loginLink": "Sign in",
+      "terms": "By signing up, you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and our",
+      "privacyLink": "Privacy Policy",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "passwordMin": "Password must be at least 8 characters",
+        "confirmPasswordMin": "Password must be at least 8 characters",
+        "passwordMismatch": "Passwords do not match"
+      }
+    },
+    "RegisterMagicLinkForm": {
+      "email": {
+        "label": "Email",
+        "placeholder": "john@example.com"
+      },
+      "submit": "Send registration link",
+      "submitting": "Sending..."
+    },
+    "ResetPasswordPage": {
+      "title": "Password Reset",
+      "metadata": {
+        "title": "Password Reset - Next SaaS Boilerplate",
+        "description": "Reset your password"
+      }
+    },
+    "ResetPasswordForm": {
+      "requestTitle": "Password Reset",
+      "requestDescription": "Enter your email to receive a reset link",
+      "resetTitle": "New Password",
+      "resetDescription": "Enter your new password",
+      "email": {
+        "label": "Email",
+        "placeholder": "example@email.com"
+      },
+      "password": {
+        "label": "New password"
+      },
+      "confirmPassword": {
+        "label": "Confirm password"
+      },
+      "sendLink": "Send reset link",
+      "sendingLink": "Sending...",
+      "resetPassword": "Reset password",
+      "resetting": "Resetting...",
+      "backToLogin": "Back to login",
+      "emailSent": "Reset email sent",
+      "passwordResetSuccess": "Password reset successfully",
+      "errorOccurred": "An error occurred",
+      "terms": "By continuing, you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and our",
+      "privacyLink": "Privacy Policy",
+      "validation": {
+        "passwordMin": "Password must be at least 8 characters",
+        "passwordMax": "Password must not exceed 100 characters",
+        "passwordsMismatch": "Passwords do not match"
+      }
+    },
+    "VerifyRequestPage": {
+      "title": "Last step",
+      "description": "A verification email has been sent to your email address. You will find a link from us. Click on it to continue."
+    },
+    "OtpVerificationPage": {
+      "title": "OTP Verification",
+      "description": "Enter the 6-digit OTP code sent to your email",
+      "descriptionAutomatic": "Automatic code verification...",
+      "descriptionSending": "Sending OTP code...",
+      "codeLabel": "OTP Code",
+      "codePlaceholder": "123456",
+      "submitButton": "Verify OTP code",
+      "submitting": "Verifying...",
+      "backToLogin": "Back to login",
+      "useBackupCode": "Use a backup code",
+      "validation": {
+        "codeRequired": "Code must contain 6 digits",
+        "codeFormat": "Code must contain only digits"
+      },
+      "messages": {
+        "otpSent": "OTP code sent to email",
+        "otpSendError": "Error sending OTP code",
+        "verificationSuccess": "OTP verification successful",
+        "verificationError": "An error occurred during OTP verification",
+        "redirecting": "Redirecting to dashboard..."
+      },
+      "terms": "By continuing, you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and our",
+      "privacyLink": "Privacy Policy"
+    },
+    "TotpVerificationPage": {
+      "title": "Two-factor authentication",
+      "description": "Enter the verification code from your authentication app",
+      "codeLabel": "Verification code",
+      "codePlaceholder": "123456",
+      "submitButton": "Verify code",
+      "submitting": "Verifying...",
+      "backToLogin": "Back to login",
+      "useBackupCode": "Use a backup code",
+      "validation": {
+        "codeRequired": "Code must contain 6 digits",
+        "codeFormat": "Code must contain only digits"
+      },
+      "messages": {
+        "verificationSuccess": "Verification successful",
+        "verificationError": "Invalid verification code",
+        "generalError": "An error occurred during verification"
+      },
+      "terms": "By continuing, you agree to our",
+      "termsLink": "Terms of Service",
+      "and": "and our",
+      "privacyLink": "Privacy Policy"
+    },
+    "RecoveryCodePage": {
+      "title": "Backup code",
+      "description": "Enter one of your backup codes to access your account"
+    },
+    "RecoveryCodeForm": {
+      "title": "Account recovery",
+      "description": "Enter one of your backup codes to access your account",
+      "alertDescription": "Backup codes are generated when two-factor authentication is enabled. Each code can only be used once.",
+      "codeLabel": "Backup code",
+      "codePlaceholder": "e.g., ABC123DEF456",
+      "submitButton": "Access account",
+      "submitting": "Verifying...",
+      "noCodeMessage": "Don't have a backup code?",
+      "backToLogin": "Back to login",
+      "validation": {
+        "codeRequired": "Backup code is required",
+        "codeFormat": "Code must contain only letters, numbers, or hyphens"
+      },
+      "messages": {
+        "success": "Success",
+        "error": "Error"
+      }
+    }
+  },
+  "AuthActions": {
+    "login": {
+      "validationError": "Validation error",
+      "userNotFound": "No account found with this email",
+      "invalidCredentials": "Invalid credentials",
+      "connectionError": "An error occurred during login",
+      "userBanned": {
+        "base": "Your account has been suspended.",
+        "reason": "Reason: {reason}",
+        "expires": "Suspension will be lifted on {date} at {time}",
+        "permanent": "This suspension is permanent."
+      }
+    },
+    "magicLink": {
+      "validationError": "Validation error",
+      "userNotFound": "No account found with this email",
+      "sendError": "Error sending magic link",
+      "unexpectedError": "An error occurred while sending the magic link"
+    },
+    "register": {
+      "validationError": "Validation error",
+      "emailAlreadyUsed": "This email is already in use",
+      "userCreationError": "Error creating user",
+      "invalidCredentials": "Invalid credentials",
+      "accountCreationError": "An error occurred during account creation"
+    },
+    "registerMagicLink": {
+      "validationError": "Validation error",
+      "emailAlreadyUsed": "This email is already in use",
+      "sendError": "Error sending magic link",
+      "unexpectedError": "An error occurred while sending the magic link",
+      "linkSent": "A login link has been sent to your email address"
+    },
+    "verifyBackupCode": {
+      "emptyCode": "Backup code cannot be empty",
+      "invalidCode": "Invalid backup code",
+      "verificationError": "An error occurred during code verification"
+    },
+    "verifyOTP": {
+      "emptyCode": "OTP code cannot be empty",
+      "invalidCode": "Invalid OTP code",
+      "verificationError": "An error occurred during OTP verification"
+    },
+    "loginProvider": {
+      "redirecting": "Redirecting to provider...",
+      "connectionError": "An error occurred while connecting to the account"
+    },
+    "registerProvider": {
+      "redirecting": "Redirecting to provider..."
+    }
+  },
+  "email": {
+    "user": {
+      "verify": {
+        "subject": "Verify your email address",
+        "preview": "You have requested a magic link to connect to your account.",
+        "title": "Login",
+        "clickToConnect": "Click here to connect",
+        "ignoreMessage": "If you did not request this link, please ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "magicLink": {
+        "subject": "Your magic link to sign in",
+        "preview": "You have requested a magic link to connect to your account.",
+        "title": "Magic Login",
+        "clickToConnect": "Click here to connect",
+        "ignoreMessage": "If you did not request this link, please ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "resetPassword": {
+        "subject": "Reset your password",
+        "preview": "You have requested to reset your password.",
+        "title": "Password Reset",
+        "clickToReset": "Click here to reset your password",
+        "ignoreMessage": "If you did not request this reset, please ignore this email.",
+        "expirationWarning": "This link will expire in 24 hours.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "organizationInvitation": {
+        "subject": "Invitation to join {teamName}",
+        "preview": "{invitedByUsername} invites you to join {teamName}",
+        "title": "Organization Invitation",
+        "hello": "Hello,",
+        "invitationMessage": "{invitedByUsername} ({invitedByEmail}) invites you to join the organization {teamName}.",
+        "acceptInvitation": "To accept this invitation, please click on the following link:",
+        "clickToAccept": "Accept invitation",
+        "expirationWarning": "This link will expire in 24 hours.",
+        "ignoreMessage": "If you did not initiate this request, you can ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "welcome": {
+        "subject": "Welcome to {appName}",
+        "preview": "Welcome! Your account has been successfully created.",
+        "title": "Welcome!",
+        "welcomeMessage": "Thank you for signing up for {appName}. Your account has been successfully created.",
+        "getStarted": "Get Started",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "emailChange": {
+        "subject": "Email change confirmation",
+        "preview": "You have requested to change your email address.",
+        "title": "Email Change Confirmation",
+        "clickToConfirm": "Click here to confirm your new email address",
+        "expirationWarning": "This link will expire in 24 hours.",
+        "ignoreMessage": "If you did not request this change, please ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "verification": {
+        "subject": "Verify your email address",
+        "preview": "Verify your email address to activate your account",
+        "title": "Email Verification",
+        "welcomeMessage": "Thank you for signing up! To activate your account, please click on the link below:",
+        "clickToVerify": "Verify my email address",
+        "expirationWarning": "This link will expire in 24 hours.",
+        "ignoreMessage": "If you did not create an account, you can safely ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "otp": {
+        "subject": "Two-factor verification code",
+        "preview": "Your two-factor verification code",
+        "title": "Verification Code",
+        "description": "Here is your two-factor verification code:",
+        "expirationWarning": "This code will expire in 5 minutes.",
+        "verifyAutomatically": "Verify automatically",
+        "orCopyCode": "Or copy the code above into the application",
+        "ignoreMessage": "If you did not request this code, you can safely ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "subscriptionCompleted": {
+        "subject": "Welcome! Your {planName} subscription is active",
+        "preview": "Congratulations! Your {planName} subscription has been successfully activated.",
+        "title": "Subscription Activated",
+        "welcomeMessage": "Congratulations! Your {planName} subscription has been successfully activated.",
+        "planDetails": "Your subscription details:",
+        "planName": "Plan: {planName}",
+        "status": "Status: {status}",
+        "seats": "Seats: {seats}",
+        "price": "Price: {price}",
+        "limits": "Limits: {limits}",
+        "nextBilling": "Next billing: {nextBilling}",
+        "periodEnd": "Period ends: {periodEnd}",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "subscriptionUpdated": {
+        "subject": "Your {planName} subscription has been updated",
+        "preview": "Your {planName} subscription has been successfully modified.",
+        "title": "Subscription Updated",
+        "welcomeMessage": "Your {planName} subscription has been successfully modified.",
+        "planDetails": "Your updated subscription details:",
+        "planName": "Plan: {planName}",
+        "status": "Status: {status}",
+        "seats": "Seats: {seats}",
+        "price": "Price: {price}",
+        "limits": "Limits: {limits}",
+        "nextBilling": "Next billing: {nextBilling}",
+        "periodEnd": "Period ends: {periodEnd}",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "subscriptionCanceled": {
+        "subject": "Your {planName} subscription has been canceled",
+        "preview": "Your {planName} subscription has been successfully canceled.",
+        "title": "Subscription Canceled",
+        "message": "Your {planName} subscription has been successfully canceled.",
+        "planDetails": "Canceled subscription details:",
+        "planName": "Plan: {planName}",
+        "status": "Status: {status}",
+        "seats": "Seats: {seats}",
+        "price": "Price: {price}",
+        "limits": "Limits: {limits}",
+        "canceledAt": "Canceled on: {canceledAt}",
+        "periodEnd": "Access until: {periodEnd}",
+        "reactivateInfo": "You can reactivate your subscription anytime from your dashboard.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "subscriptionDeleted": {
+        "subject": "Your {planName} subscription has been deleted",
+        "preview": "Your {planName} subscription has been permanently deleted.",
+        "title": "Subscription Deleted",
+        "message": "Your {planName} subscription has been permanently deleted.",
+        "planDetails": "Deleted subscription details:",
+        "planName": "Plan: {planName}",
+        "status": "Status: {status}",
+        "seats": "Seats: {seats}",
+        "price": "Price: {price}",
+        "limits": "Limits: {limits}",
+        "deletedAt": "Deleted on: {deletedAt}",
+        "accessLost": "Your access to premium features has been revoked.",
+        "resubscribeInfo": "You can subscribe again anytime from your dashboard.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "notification": {
+        "subject": "Notification - {title}",
+        "preview": "You have received a new notification",
+        "additionalInfo": "This notification was automatically generated by the system.",
+        "timestamp": "Sent on {date}",
+        "footer": {
+          "greeting": "Best regards,",
+          "signature": "The SaaS Mike Codeur team",
+          "unsubscribe": "You can modify your notification preferences in your account settings."
+        }
+      }
+    },
+    "admin": {
+      "userCreated": {
+        "subject": "New user created",
+        "preview": "A new user has signed up on the platform.",
+        "title": "New User",
+        "userInfo": "A new user has signed up:",
+        "viewUser": "View User",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "userDeleted": {
+        "subject": "User deleted",
+        "preview": "A user has been deleted from the platform.",
+        "title": "User Deleted",
+        "userInfo": "The following user has been deleted:",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "systemAlert": {
+        "subject": "System Alert",
+        "preview": "A system alert has been triggered.",
+        "title": "System Alert",
+        "alertMessage": "A system alert has been triggered:",
+        "viewDetails": "View Details",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "organizationInvitation": {
+        "subject": "Invitation to join {teamName}",
+        "preview": "{invitedByUsername} invites you to join {teamName}",
+        "title": "Organization Invitation",
+        "hello": "Hello,",
+        "invitationMessage": "{invitedByUsername} ({invitedByEmail}) invites you to join the organization {teamName}.",
+        "acceptInvitation": "To accept this invitation, please click on the following link:",
+        "clickToAccept": "Accept invitation",
+        "expirationWarning": "This link will expire in 24 hours.",
+        "ignoreMessage": "If you did not initiate this request, you can ignore this email.",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      },
+      "internal": {
+        "subject": "Internal email",
+        "preview": "Internal system email",
+        "footer": "SaaS Mike Codeur Stripe Boilerplate"
+      }
+    }
+  },
+  "PrivacyPage": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy page",
+    "sections": {
+      "privacyPolicy": {
+        "title": "Privacy Policy",
+        "description": "Your privacy is important to us. This privacy policy describes the types of information that [Company Name] (\"we\", \"our\", \"us\") may collect from you or that you provide to us when you use our service, and how we use, protect, and disclose such information. By using the service, you agree to the collection and use of information in accordance with this policy."
+      },
+      "collectedInformation": {
+        "title": "Information Collected",
+        "description": "We may collect different types of information when you use our service, including:",
+        "contents": [
+          "Personal identification information such as your name, email address, phone number, and billing information when you register to use our service.",
+          "Business information such as company name, address, and other financial information necessary for managing your finances.",
+          "Sports activity information such as types of activities performed, duration and intensity of exercise."
+        ]
+      },
+      "informationUsage": {
+        "title": "Use of Information",
+        "description": "We use the information we collect to:",
+        "contents": [
+          "Provide, maintain, and improve our service.",
+          "Personalize your experience and respond to your individual needs.",
+          "Process your financial transactions and provide you with financial tracking.",
+          "Track and analyze usage trends and user preferences.",
+          "Send you administrative information such as account alerts, service updates, or service-related communications."
+        ]
+      },
+      "informationProtection": {
+        "title": "Information Protection",
+        "description": "The security of your information is important to us. We implement appropriate security measures to protect information against unauthorized access, alteration, disclosure, or destruction."
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "description": "We retain your personal information for as long as necessary for the purposes for which it was collected and in accordance with legal requirements."
+      },
+      "policyChanges": {
+        "title": "Privacy Policy Changes",
+        "description": "We reserve the right to update or modify this privacy policy at any time. Any changes will be posted on this page with an updated revision date."
+      }
+    }
+  },
+  "Tasks": {
+    "board": {
+      "title": "Task Board",
+      "columns": {
+        "todo": "To Do",
+        "in_progress": "In Progress",
+        "done": "Done"
+      },
+      "empty": "No tasks",
+      "loading": "Loading tasks...",
+      "dragAndDrop": "Drag and drop tasks to change their status"
+    },
+    "card": {
+      "createdBy": "Created by",
+      "assignedTo": "Assigned to",
+      "dueDate": "Due date",
+      "createdAt": "Created on",
+      "status": {
+        "todo": "To Do",
+        "in_progress": "In Progress",
+        "done": "Done"
+      }
+    },
+    "actions": {
+      "create": "New Task",
+      "edit": "Edit Task",
+      "delete": "Delete Task",
+      "assign": "Assign",
+      "move": "Move",
+      "updateOrder": "Task order updated",
+      "orderUpdateError": "Error updating task order"
+    },
+    "form": {
+      "title": "Task Title",
+      "titlePlaceholder": "Enter task title",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter description (optional)",
+      "status": "Status",
+      "assignedTo": "Assigned to",
+      "dueDate": "Due date",
+      "save": "Save",
+      "cancel": "Cancel",
+      "creating": "Creating...",
+      "updating": "Updating..."
+    },
+    "messages": {
+      "createSuccess": "Task created successfully",
+      "updateSuccess": "Task updated successfully",
+      "deleteSuccess": "Task deleted successfully",
+      "createError": "Error creating task",
+      "updateError": "Error updating task",
+      "deleteError": "Error deleting task"
+    }
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Discover our latest articles and insights on web development",
+    "meta": {
+      "title": "Blog - Articles and tutorials on web development",
+      "description": "Discover our articles on Next.js, React, TypeScript and the latest web development technologies."
+    },
+    "backToBlog": "Back to articles",
+    "share": "Share",
+    "readTime": "min read"
+  },
+  "BlogListPage": {
+    "title": "Articles",
+    "description": "Discover our latest articles and insights on web development",
+    "meta": {
+      "title": "Blog - Articles and tutorials on web development",
+      "description": "Discover our articles on Next.js, React, TypeScript and the latest web development technologies."
+    },
+    "noArticles": "No articles available yet.",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "BlogPostPage": {
+    "meta": {
+      "title": "Blog - Articles and tutorials on web development"
+    },
+    "publishedOn": "Published on",
+    "updatedOn": "Updated on",
+    "share": "Share",
+    "comment": "Comment"
+  },
+  "BlogLayout": {
+    "navigation": {
+      "title": "Navigation",
+      "allArticles": "All Articles",
+      "mdxArticles": "MDX Articles",
+      "admin": "Admin"
+    },
+    "categories": {
+      "title": "Categories"
+    },
+    "popular": {
+      "title": "Most Read",
+      "views": "views"
+    },
+    "hashtags": {
+      "title": "Popular Tags"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Stay updated with our latest articles and web development news.",
+      "placeholder": "your.email@example.com",
+      "subscribe": "Subscribe",
+      "privacy": "No spam, unsubscribe anytime"
+    },
+    "stats": {
+      "title": "Blog Stats",
+      "articles": "Articles",
+      "authors": "Authors",
+      "categories": "Categories",
+      "totalViews": "Total Views"
+    }
+  },
+  "WelcomeFollowUpEmail": {
+    "preview": "How are you getting on with your new platform?",
+    "title": "How are things going?",
+    "greeting": "Hello {name},",
+    "message": "It's been 24 hours since you joined our platform! We hope everything is going well and that you're starting to discover all the available features.",
+    "ctaButton": "Access my dashboard",
+    "tips": {
+      "title": "Here are some tips to get you started:",
+      "tip1": "Explore your dashboard to get an overview",
+      "tip2": "Configure your profile and preferences",
+      "tip3": "Don't hesitate to check out our documentation"
+    },
+    "support": "If you have any questions or need help, our support team is here to assist you. Just reply to this email!",
+    "footer": "You are receiving this email because you signed up on our platform with the address {email}."
+  }
+}
