@@ -309,6 +309,7 @@ function createDatabaseHooks() {
             data: {
               ...user,
               name: user.name || user.email.split('@')[0],
+              role: user.role || 'PLAYER', // Rôle par défaut pour Edgemy
             },
           }
         },
