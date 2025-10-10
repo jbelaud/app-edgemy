@@ -95,6 +95,14 @@ const options = {
     },
   },
   user: {
+    additionalFields: {
+      role: {
+        type: 'string',
+        required: true,
+        defaultValue: 'PLAYER',
+        input: false, // Ne pas permettre de définir le rôle via l'input utilisateur
+      },
+    },
     changeEmail: {
       enabled: AuthAppConfig.changeEmail,
       sendChangeEmailVerification: async ({user, newEmail, url}) => {
