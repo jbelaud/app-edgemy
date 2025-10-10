@@ -44,7 +44,7 @@ export default async function Home({
   return (
     <div className="bg-background text-foreground flex min-h-screen flex-col">
       {/* Header */}
-      <header className="border-border bg-background/80 relative flex w-full items-center border-b px-4 py-4 backdrop-blur sm:px-6 md:px-8">
+      <header className="border-border bg-background/80 sticky top-0 z-50 flex w-full items-center border-b px-4 py-4 backdrop-blur sm:px-6 md:px-8">
         <div className="flex items-center gap-2">
           <ImageTheme
             className="relative z-10"
@@ -86,9 +86,19 @@ export default async function Home({
         <p className="text-muted-foreground mb-8 max-w-2xl text-lg sm:text-xl">
           {t('hero.description')}
         </p>
-        <Button size="lg" className="mb-8">
-          <Link href="/register">{t('hero.cta')}</Link>
-        </Button>
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row">
+          <Button size="lg" asChild>
+            <Link href="/register">{t('hero.cta')}</Link>
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-orange-500 bg-orange-500/10 text-orange-600 hover:bg-orange-500/20 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300"
+            asChild
+          >
+            <Link href="/register?role=coach">Devenir Coach</Link>
+          </Button>
+        </div>
       </section>
 
       {/* Product Image */}
