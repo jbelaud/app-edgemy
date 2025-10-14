@@ -5,6 +5,17 @@ process.env.SUPABASE_ANON_KEY = 'test-anon-key'
 process.env.STORAGE_TYPE = 'supabase'
 process.env.SUPABASE_BUCKET = 'test-bucket'
 
+// Mock du module env
+vi.mock('@/env', () => ({
+  env: {
+    SUPABASE_URL: 'https://test.supabase.co',
+    SUPABASE_ANON_KEY: 'test-anon-key',
+    SUPABASE_BUCKET: 'test-bucket',
+    STORAGE_TYPE: 'supabase',
+    NODE_ENV: 'test',
+  },
+}))
+
 // Mock du client Supabase
 vi.mock('@/lib/files/supabaseClient', () => ({
   supabase: {
