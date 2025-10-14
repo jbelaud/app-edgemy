@@ -4,7 +4,8 @@ import Link from 'next/link'
 import {Metadata} from 'next/types'
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 
-import ButtonConnexionDashboard from '@/components/features/auth/button-connexion-dashboard'
+import ButtonConnexionDashboardModal from '@/components/features/auth/button-connexion-dashboard-modal'
+import ButtonDevenirCoachWrapper from '@/components/features/auth/button-devenir-coach-wrapper'
 import PublicFooter from '@/components/features/layouts/public-footer'
 import ImageTheme from '@/components/image-theme'
 import {LangToggle} from '@/components/lang-toggle'
@@ -71,16 +72,9 @@ export default async function Home({
           </Link>
         </nav>
         <div className="ml-auto flex items-center gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            className="border-orange-500 bg-orange-500/10 text-orange-600 hover:bg-orange-500/20 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300"
-            asChild
-          >
-            <Link href="/register?role=coach">Devenir Coach</Link>
-          </Button>
+          <ButtonDevenirCoachWrapper />
           <LangToggle />
-          <ButtonConnexionDashboard />
+          <ButtonConnexionDashboardModal />
           <ModeToggle />
         </div>
       </header>

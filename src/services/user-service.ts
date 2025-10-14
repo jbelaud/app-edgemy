@@ -211,19 +211,22 @@ export const initializeRegisterUserDataService = async (
   }
 
   // Déclencher l'email de suivi 24h après inscription si userId fourni
+  // Appel non-bloquant pour éviter de faire échouer l'inscription
   if (user.id) {
-    try {
-      const locale = await getLocale()
-      await triggerInngestWelcomeFollowUpEmail({
-        userId: user.id,
-        userName: user.name || user.email.split('@')[0],
-        userEmail: user.email,
-        language: locale as SupportedLanguage,
+    // Fire and forget - ne pas attendre la réponse
+    getLocale()
+      .then((locale) =>
+        triggerInngestWelcomeFollowUpEmail({
+          userId: user.id,
+          userName: user.name || user.email.split('@')[0],
+          userEmail: user.email,
+          language: locale as SupportedLanguage,
+        })
+      )
+      .catch((error) => {
+        // Log l'erreur mais ne pas faire échouer l'inscription
+        logger.error("Erreur lors du déclenchement de l'email de suivi:", error)
       })
-    } catch (error) {
-      // Log l'erreur mais ne pas faire échouer l'inscription
-      logger.error("Erreur lors du déclenchement de l'email de suivi:", error)
-    }
   }
 
   // Vérifier si l'utilisateur a déjà une organisation

@@ -6,6 +6,7 @@ import {
   getFreePlan,
   getProPlan,
 } from '@/app/dal/subscription-dal'
+import OrganizationProvider from '@/components/context/organization-provider'
 import {PagesConst} from '@/env'
 import {isPageEnabled} from '@/lib/utils'
 
@@ -72,5 +73,9 @@ export default async function Page() {
     },
   ]
 
-  return <SubscriptionPage availablePlans={availablePlans} />
+  return (
+    <OrganizationProvider>
+      <SubscriptionPage availablePlans={availablePlans} />
+    </OrganizationProvider>
+  )
 }

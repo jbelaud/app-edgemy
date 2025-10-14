@@ -2,11 +2,11 @@ import Link from 'next/link'
 import {getTranslations, setRequestLocale} from 'next-intl/server'
 import {PropsWithChildren} from 'react'
 
+import ButtonConnexionDashboardModal from '@/components/features/auth/button-connexion-dashboard-modal'
 import PublicFooter from '@/components/features/layouts/public-footer'
 import {PublicMobileMenu} from '@/components/features/layouts/public-mobile-menu'
 import {LangToggle} from '@/components/lang-toggle'
 import {ModeToggle} from '@/components/theme-toggle'
-import {Button} from '@/components/ui/button'
 import {PagesConst} from '@/env'
 import {routing} from '@/i18n/routing'
 import {isPageEnabled} from '@/lib/utils'
@@ -74,9 +74,9 @@ export default function PublicLayout({children}: PropsWithChildren) {
             <div className="flex flex-1 items-center justify-end space-x-2">
               <div className="flex items-center gap-2">
                 <LangToggle />
-                <Button asChild className="hidden sm:flex">
-                  <Link href="/login">Connexion</Link>
-                </Button>
+                <div className="hidden sm:flex">
+                  <ButtonConnexionDashboardModal />
+                </div>
                 <div className="sm:hidden">
                   <PublicMobileMenu />
                 </div>
