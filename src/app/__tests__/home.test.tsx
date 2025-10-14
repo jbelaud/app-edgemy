@@ -4,16 +4,6 @@ import {beforeEach, describe, expect, it, vi} from 'vitest'
 import {render} from '@/__tests__/customRender'
 import Home from '@/app/[locale]/page'
 
-// Mock de la base de données pour éviter les connexions réelles
-vi.mock('@/db/models/db', () => ({
-  default: {
-    select: vi.fn(),
-    insert: vi.fn(),
-    update: vi.fn(),
-    delete: vi.fn(),
-  },
-}))
-
 // Mock de better-auth pour éviter la connexion à la base de données
 vi.mock('@/lib/better-auth/auth', () => ({
   auth: {

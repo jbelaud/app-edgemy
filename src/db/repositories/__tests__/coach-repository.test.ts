@@ -1,14 +1,4 @@
-import {beforeEach, describe, expect, it, vi} from 'vitest'
-
-// Mock de la base de données pour éviter les connexions réelles
-vi.mock('@/db/models/db', () => ({
-  default: {
-    select: vi.fn(),
-    insert: vi.fn(),
-    update: vi.fn(),
-    delete: vi.fn(),
-  },
-}))
+import {beforeEach, describe, expect, it} from 'vitest'
 
 import {user} from '@/db/models/auth-model'
 import db from '@/db/models/db'
@@ -26,6 +16,11 @@ import {
   updateCoachProfileStatsDao,
 } from '../coach-repository'
 
+// TODO: Configurer une base de données de test Neon pour les tests d'intégration
+// Pour activer ces tests :
+// 1. Créer une branche de test sur Neon ou utiliser une base de données de test
+// 2. Ajouter TEST_DATABASE_URL dans .env.test
+// 3. Modifier setup-test.ts pour utiliser TEST_DATABASE_URL
 describe.skip('[CoachRepository] CRUD Operations', () => {
   let testUserId: string
   let testCoachProfileId: string
