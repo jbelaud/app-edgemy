@@ -20,61 +20,137 @@
     "description": "Autenticación"
   },
   "HomePage": {
-    "title": "Plataforma SaaS moderna para impulsar tu negocio",
-    "description": "Gestiona, analiza y desarrolla tu actividad con herramientas potentes y una interfaz intuitiva.",
+    "title": "Coaching de póker de nueva generación",
+    "description": "Encuentra tu coach, reserva tus sesiones y sigue tu progreso, todo en uno.",
     "metadata": {
-      "title": "Inicio - Edgemy",
-      "description": "Plataforma SaaS moderna para impulsar tu negocio"
+      "title": "Edgemy - Coaching de póker de nueva generación",
+      "description": "Encuentra tu coach de póker, reserva tus sesiones y sigue tu progreso, todo en uno."
     },
     "navigation": {
-      "features": "Características",
-      "pricing": "Precios",
-      "contact": "Contacto"
+      "howItWorks": "Cómo funciona",
+      "coaches": "Coaches",
+      "testimonials": "Testimonios"
     },
     "hero": {
-      "title": "Plataforma SaaS moderna para impulsar tu negocio",
-      "description": "Gestiona, analiza y desarrolla tu actividad con herramientas potentes y una interfaz intuitiva.",
-      "cta": "Prueba gratis"
+      "title": "Coaching de póker de nueva generación.",
+      "subtitle": "Encuentra tu coach, reserva tus sesiones y sigue tu progreso, todo en uno.",
+      "ctaPlayer": "Soy jugador",
+      "ctaCoach": "Soy coach"
     },
-    "features": {
-      "title": "Características",
-      "subtitle": "Descubre lo que hace única nuestra plataforma",
-      "automation": {
-        "title": "Automatización",
-        "description": "Automatiza tus tareas repetitivas y ahorra tiempo diariamente."
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "Progresa en 3 pasos simples",
+      "steps": {
+        "findCoach": {
+          "title": "Encuentra el coach adecuado",
+          "description": "Explora los perfiles de nuestros coaches expertos y elige el que se adapte a tu perfil y objetivos."
+        },
+        "bookSession": {
+          "title": "Reserva una sesión",
+          "description": "Programa fácilmente tus sesiones de coaching en video según tu disponibilidad y la de tu coach."
+        },
+        "trackProgress": {
+          "title": "Sigue tu progreso",
+          "description": "Accede a tu panel personal para monitorear tu evolución y revisar tus sesiones pasadas."
+        }
+      }
+    },
+    "featuredCoaches": {
+      "title": "Descubre nuestros coaches destacados",
+      "subtitle": "Expertos en MTT, Cash Game y mindset, listos para apoyarte.",
+      "viewProfile": "Ver perfil"
+    },
+    "forPlayersAndCoaches": {
+      "title": "Una plataforma para todos",
+      "subtitle": "Ya seas jugador o coach, Edgemy te acompaña en tu camino del póker.",
+      "tabs": {
+        "players": "Para jugadores",
+        "coaches": "Para coaches"
       },
-      "analytics": {
-        "title": "Análisis Avanzado",
-        "description": "Obtén informes detallados para impulsar tu crecimiento."
+      "players": {
+        "title": "Apoyo personalizado para progresar más rápido.",
+        "features": {
+          "customCoaching": {
+            "title": "Elige tu coach según tu perfil",
+            "description": "Encuentra el coach que se adapte perfectamente a tu nivel, objetivos y estilo de juego."
+          },
+          "bookSessions": {
+            "title": "Reserva sesiones de video personalizadas",
+            "description": "Programa tus sesiones de coaching en pocos clics y progresa a tu ritmo."
+          },
+          "trackProgress": {
+            "title": "Sigue tu progreso con tu panel",
+            "description": "Visualiza tu evolución, accede a tus replays y optimiza tu aprendizaje."
+          }
+        },
+        "cta": "Descubrir coaches"
       },
-      "security": {
-        "title": "Seguridad Óptima",
-        "description": "Tus datos están protegidos con nuestra infraestructura segura."
+      "coaches": {
+        "title": "Monetiza tu experiencia sin restricciones.",
+        "features": {
+          "createProfile": {
+            "title": "Crea tu perfil y desarrolla tu visibilidad",
+            "description": "Presenta tu experiencia, tus especialidades y atrae nuevos estudiantes fácilmente."
+          },
+          "manageSchedule": {
+            "title": "Gestiona tu agenda y reservas",
+            "description": "Controla tu horario, acepta o rechaza solicitudes según tu disponibilidad."
+          },
+          "proEnvironment": {
+            "title": "Benefíciate de un entorno profesional y automatizado",
+            "description": "Pagos seguros, gestión de sesiones, herramientas de seguimiento: todo está centralizado."
+          }
+        },
+        "cta": "Conviértete en coach en Edgemy"
+      }
+    },
+    "testimonials": {
+      "title": "Hablan de Edgemy",
+      "subtitle": "Descubre los comentarios de nuestra comunidad de jugadores y coaches.",
+      "items": {
+        "julien": {
+          "text": "Encontré un coach que se adapta perfectamente a mi nivel. La experiencia es ultra fluida."
+        },
+        "sarah": {
+          "text": "Edgemy me permite gestionar mis estudiantes y mi agenda fácilmente, todo está centralizado."
+        },
+        "louis": {
+          "text": "Una plataforma seria y moderna, finalmente un verdadero puente entre jugadores y coaches."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Únete a la nueva generación de jugadores y coaches de póker.",
+      "subtitle": "Crea tu cuenta gratis y comienza tu viaje hoy.",
+      "ctaPlayer": "Soy jugador",
+      "ctaCoach": "Soy coach",
+      "features": {
+        "free": "Registro gratuito",
+        "secure": "Pagos seguros vía Stripe",
+        "noCard": "No se requiere tarjeta"
       }
     },
     "footer": {
-      "byMike": "By Mike Codeur",
-      "allRightsReserved": "Todos los derechos reservados.",
+      "description": "La plataforma de coaching de póker de nueva generación. Conecta jugadores y coaches para un progreso óptimo.",
+      "copyright": "Todos los derechos reservados",
+      "paymentInfo": "Pagos seguros vía Stripe – Chat integrado vía Discord API",
       "product": {
         "title": "Producto",
-        "features": "Características",
+        "coaches": "Nuestros coaches",
         "pricing": "Precios",
-        "demo": "Demo",
-        "updates": "Novedades"
+        "about": "Acerca de"
       },
       "resources": {
         "title": "Recursos",
-        "documentation": "Documentación",
+        "faq": "FAQ",
         "blog": "Blog",
-        "support": "Soporte",
-        "api": "API"
+        "support": "Soporte"
       },
       "legal": {
-        "title": "Legal y Contacto",
-        "terms": "Aviso Legal",
-        "privacy": "Política de Privacidad",
-        "contact": "Contacto",
-        "careers": "Empleos"
+        "title": "Legal",
+        "terms": "Términos",
+        "privacy": "Privacidad",
+        "contact": "Contacto"
       }
     }
   },

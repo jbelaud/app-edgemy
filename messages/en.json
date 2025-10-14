@@ -20,61 +20,137 @@
     "description": "Authentication"
   },
   "HomePage": {
-    "title": "Modern SaaS platform to boost your business",
-    "description": "Manage, analyze and grow your business with powerful tools and an intuitive interface.",
+    "title": "Next-generation poker coaching",
+    "description": "Find your coach, book your sessions and track your progress, all-in-one.",
     "metadata": {
-      "title": "Home - Edgemy",
-      "description": "Modern SaaS platform to boost your business"
+      "title": "Edgemy - Next-generation poker coaching",
+      "description": "Find your poker coach, book your sessions and track your progress, all-in-one."
     },
     "navigation": {
-      "features": "Features",
-      "pricing": "Pricing",
-      "contact": "Contact"
+      "howItWorks": "How it works",
+      "coaches": "Coaches",
+      "testimonials": "Testimonials"
     },
     "hero": {
-      "title": "Modern SaaS platform to boost your business",
-      "description": "Manage, analyze and grow your business with powerful tools and an intuitive interface.",
-      "cta": "Try for free"
+      "title": "Next-generation poker coaching.",
+      "subtitle": "Find your coach, book your sessions and track your progress, all-in-one.",
+      "ctaPlayer": "I'm a player",
+      "ctaCoach": "I'm a coach"
     },
-    "features": {
-      "title": "Features",
-      "subtitle": "Discover what makes our platform unique",
-      "automation": {
-        "title": "Automation",
-        "description": "Automate your repetitive tasks and save time daily."
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "Progress in 3 simple steps",
+      "steps": {
+        "findCoach": {
+          "title": "Find the right coach",
+          "description": "Browse our expert coaches' profiles and choose the one that matches your profile and goals."
+        },
+        "bookSession": {
+          "title": "Book a session",
+          "description": "Easily schedule your video coaching sessions according to your availability and your coach's."
+        },
+        "trackProgress": {
+          "title": "Track your progress",
+          "description": "Access your personal dashboard to monitor your evolution and review your past sessions."
+        }
+      }
+    },
+    "featuredCoaches": {
+      "title": "Discover our featured coaches",
+      "subtitle": "MTT, Cash Game and mindset experts, ready to support you.",
+      "viewProfile": "View profile"
+    },
+    "forPlayersAndCoaches": {
+      "title": "A platform for everyone",
+      "subtitle": "Whether you're a player or a coach, Edgemy supports you on your poker journey.",
+      "tabs": {
+        "players": "For players",
+        "coaches": "For coaches"
       },
-      "analytics": {
-        "title": "Advanced Analytics",
-        "description": "Get detailed reports to drive your growth."
+      "players": {
+        "title": "Personalized support to progress faster.",
+        "features": {
+          "customCoaching": {
+            "title": "Choose your coach according to your profile",
+            "description": "Find the coach that perfectly matches your level, goals and playing style."
+          },
+          "bookSessions": {
+            "title": "Book personalized video sessions",
+            "description": "Schedule your coaching sessions in a few clicks and progress at your own pace."
+          },
+          "trackProgress": {
+            "title": "Track your progress with your dashboard",
+            "description": "Visualize your evolution, access your replays and optimize your learning."
+          }
+        },
+        "cta": "Discover coaches"
       },
-      "security": {
-        "title": "Optimal Security",
-        "description": "Your data is protected with our secure infrastructure."
+      "coaches": {
+        "title": "Monetize your expertise without constraints.",
+        "features": {
+          "createProfile": {
+            "title": "Create your profile and develop your visibility",
+            "description": "Present your expertise, your specialties and attract new students easily."
+          },
+          "manageSchedule": {
+            "title": "Manage your schedule and bookings",
+            "description": "Control your schedule, accept or decline requests according to your availability."
+          },
+          "proEnvironment": {
+            "title": "Benefit from a professional and automated environment",
+            "description": "Secure payments, session management, tracking tools: everything is centralized."
+          }
+        },
+        "cta": "Become a coach on Edgemy"
+      }
+    },
+    "testimonials": {
+      "title": "They talk about Edgemy",
+      "subtitle": "Discover feedback from our community of players and coaches.",
+      "items": {
+        "julien": {
+          "text": "I found a coach who perfectly matches my level. The experience is ultra smooth."
+        },
+        "sarah": {
+          "text": "Edgemy allows me to manage my students and my schedule easily, everything is centralized."
+        },
+        "louis": {
+          "text": "A serious and modern platform, finally a real bridge between players and coaches."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Join the new generation of poker players and coaches.",
+      "subtitle": "Create your free account and start your journey today.",
+      "ctaPlayer": "I'm a player",
+      "ctaCoach": "I'm a coach",
+      "features": {
+        "free": "Free registration",
+        "secure": "Secure payments via Stripe",
+        "noCard": "No card required"
       }
     },
     "footer": {
-      "byMike": "By Mike Codeur",
-      "allRightsReserved": "All rights reserved.",
+      "description": "The next-generation poker coaching platform. Connects players and coaches for optimal progress.",
+      "copyright": "All rights reserved",
+      "paymentInfo": "Secure payments via Stripe – Integrated chat via Discord API",
       "product": {
         "title": "Product",
-        "features": "Features",
+        "coaches": "Our coaches",
         "pricing": "Pricing",
-        "demo": "Demo",
-        "updates": "Updates"
+        "about": "About"
       },
       "resources": {
         "title": "Resources",
-        "documentation": "Documentation",
+        "faq": "FAQ",
         "blog": "Blog",
-        "support": "Support",
-        "api": "API"
+        "support": "Support"
       },
       "legal": {
-        "title": "Legal & Contact",
-        "terms": "Legal Notice",
-        "privacy": "Privacy Policy",
-        "contact": "Contact",
-        "careers": "Careers"
+        "title": "Legal",
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "contact": "Contact"
       }
     }
   },

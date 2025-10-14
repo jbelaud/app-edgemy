@@ -20,61 +20,137 @@
     "description": "Authentification"
   },
   "HomePage": {
-    "title": "La plateforme SaaS moderne pour booster votre business",
-    "description": "Gérez, analysez et développez votre activité avec des outils puissants et une interface intuitive.",
+    "title": "Le coaching poker nouvelle génération",
+    "description": "Trouvez votre coach, réservez vos sessions et suivez votre progression, tout-en-un.",
     "metadata": {
-      "title": "Accueil - Edgemy",
-      "description": "La plateforme SaaS moderne pour booster votre business"
+      "title": "Edgemy - Le coaching poker nouvelle génération",
+      "description": "Trouvez votre coach poker, réservez vos sessions et suivez votre progression, tout-en-un."
     },
     "navigation": {
-      "features": "Fonctionnalités",
-      "pricing": "Tarifs",
-      "contact": "Contact"
+      "howItWorks": "Comment ça marche",
+      "coaches": "Coachs",
+      "testimonials": "Témoignages"
     },
     "hero": {
-      "title": "La plateforme SaaS moderne pour booster votre business",
-      "description": "Gérez, analysez et développez votre activité avec des outils puissants et une interface intuitive.",
-      "cta": "Essayez gratuitement"
+      "title": "Le coaching poker nouvelle génération.",
+      "subtitle": "Trouvez votre coach, réservez vos sessions et suivez votre progression, tout-en-un.",
+      "ctaPlayer": "Je suis joueur",
+      "ctaCoach": "Je suis coach"
     },
-    "features": {
-      "title": "Fonctionnalités",
-      "subtitle": "Découvrez ce qui rend notre plateforme unique",
-      "automation": {
-        "title": "Automatisation",
-        "description": "Automatisez vos tâches répétitives et gagnez du temps au quotidien."
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "subtitle": "Progressez en 3 étapes simples",
+      "steps": {
+        "findCoach": {
+          "title": "Trouvez un coach adapté",
+          "description": "Parcourez les profils de nos coachs experts et choisissez celui qui correspond à votre profil et vos objectifs."
+        },
+        "bookSession": {
+          "title": "Réservez une session",
+          "description": "Planifiez facilement vos sessions de coaching en visio selon vos disponibilités et celles de votre coach."
+        },
+        "trackProgress": {
+          "title": "Suivez vos progrès",
+          "description": "Accédez à votre tableau de bord personnel pour suivre votre évolution et revoir vos sessions passées."
+        }
+      }
+    },
+    "featuredCoaches": {
+      "title": "Découvrez nos coachs en avant",
+      "subtitle": "Des experts MTT, Cash Game et mindset, prêts à vous accompagner.",
+      "viewProfile": "Voir le profil"
+    },
+    "forPlayersAndCoaches": {
+      "title": "Une plateforme pour tous",
+      "subtitle": "Que vous soyez joueur ou coach, Edgemy vous accompagne dans votre parcours poker.",
+      "tabs": {
+        "players": "Pour les joueurs",
+        "coaches": "Pour les coachs"
       },
-      "analytics": {
-        "title": "Analyse avancée",
-        "description": "Obtenez des rapports détaillés pour piloter votre croissance."
+      "players": {
+        "title": "Un accompagnement sur mesure pour progresser plus vite.",
+        "features": {
+          "customCoaching": {
+            "title": "Choisis ton coach selon ton profil",
+            "description": "Trouve le coach qui correspond parfaitement à ton niveau, tes objectifs et ton style de jeu."
+          },
+          "bookSessions": {
+            "title": "Réserve des sessions en visio personnalisées",
+            "description": "Planifie tes sessions de coaching en quelques clics et progresse à ton rythme."
+          },
+          "trackProgress": {
+            "title": "Suis ta progression avec ton tableau de bord",
+            "description": "Visualise ton évolution, accède à tes replays et optimise ton apprentissage."
+          }
+        },
+        "cta": "Découvrir les coachs"
       },
-      "security": {
-        "title": "Sécurité optimale",
-        "description": "Vos données sont protégées grâce à notre infrastructure sécurisée."
+      "coaches": {
+        "title": "Monétise ton expertise sans contraintes.",
+        "features": {
+          "createProfile": {
+            "title": "Crée ton profil et développe ta visibilité",
+            "description": "Présente ton expertise, tes spécialités et attire de nouveaux élèves facilement."
+          },
+          "manageSchedule": {
+            "title": "Gère ton planning et tes réservations",
+            "description": "Contrôle ton emploi du temps, accepte ou refuse les demandes selon tes disponibilités."
+          },
+          "proEnvironment": {
+            "title": "Bénéficie d'un environnement pro et automatisé",
+            "description": "Paiements sécurisés, gestion des sessions, outils de suivi : tout est centralisé."
+          }
+        },
+        "cta": "Devenir coach sur Edgemy"
+      }
+    },
+    "testimonials": {
+      "title": "Ils parlent d'Edgemy",
+      "subtitle": "Découvrez les retours de notre communauté de joueurs et coachs.",
+      "items": {
+        "julien": {
+          "text": "J'ai trouvé un coach qui correspond parfaitement à mon niveau. L'expérience est ultra fluide."
+        },
+        "sarah": {
+          "text": "Edgemy me permet de gérer mes élèves et mon planning facilement, tout est centralisé."
+        },
+        "louis": {
+          "text": "Une plateforme sérieuse et moderne, enfin un vrai pont entre joueurs et coachs."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Rejoins la nouvelle génération de joueurs et coachs poker.",
+      "subtitle": "Crée ton compte gratuitement et commence ton parcours dès aujourd'hui.",
+      "ctaPlayer": "Je suis joueur",
+      "ctaCoach": "Je suis coach",
+      "features": {
+        "free": "Inscription gratuite",
+        "secure": "Paiements sécurisés via Stripe",
+        "noCard": "Aucune carte requise"
       }
     },
     "footer": {
-      "byMike": "By Mike Codeur",
-      "allRightsReserved": "Tous droits réservés.",
+      "description": "La plateforme de coaching poker nouvelle génération. Connecte joueurs et coachs pour une progression optimale.",
+      "copyright": "Tous droits réservés",
+      "paymentInfo": "Paiements sécurisés via Stripe – Chat intégré via Discord API",
       "product": {
         "title": "Produit",
-        "features": "Fonctionnalités",
+        "coaches": "Nos coachs",
         "pricing": "Tarifs",
-        "demo": "Démo",
-        "updates": "Nouveautés"
+        "about": "À propos"
       },
       "resources": {
         "title": "Ressources",
-        "documentation": "Documentation",
+        "faq": "FAQ",
         "blog": "Blog",
-        "support": "Support",
-        "api": "API"
+        "support": "Support"
       },
       "legal": {
-        "title": "Légal & Contact",
-        "terms": "Mentions légales",
-        "privacy": "Politique de confidentialité",
-        "contact": "Contact",
-        "careers": "Recrutement"
+        "title": "Légal",
+        "terms": "CGU",
+        "privacy": "Confidentialité",
+        "contact": "Contact"
       }
     }
   },
